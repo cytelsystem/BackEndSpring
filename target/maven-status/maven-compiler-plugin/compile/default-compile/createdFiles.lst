@@ -1,1 +1,5 @@
-com\odontologica\OdontologicaApplication.class
+com\odontolo\controller\OdontologoController.class
+com\odontolo\services\OdontologoService.class
+com\odontolo\services\imp\OdontologoServiceImpl.class
+com\odontolo\OdontoloApplication.class
+com\odontolo\dominio\Odontologo.class

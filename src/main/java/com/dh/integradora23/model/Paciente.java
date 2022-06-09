@@ -107,6 +107,7 @@ public class Paciente {
     }
 
     public void setDomicilio(Domicilio domicilio) {
+
         this.domicilio = domicilio;
     }
 }

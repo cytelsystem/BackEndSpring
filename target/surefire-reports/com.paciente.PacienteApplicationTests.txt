@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
-<<<<<<< HEAD:target/surefire-reports/com.odontolo.OdontoloApplicationTests.txt
-Test set: com.odontolo.OdontoloApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.474 s - in com.odontolo.OdontoloApplicationTests
-=======
 Test set: com.paciente.PacienteApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.85 s - in com.paciente.PacienteApplicationTests
->>>>>>> pacienteMVC:target/surefire-reports/com.paciente.PacienteApplicationTests.txt
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.484 s - in com.paciente.PacienteApplicationTests

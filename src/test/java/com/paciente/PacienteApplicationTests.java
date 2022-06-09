@@ -1,10 +1,10 @@
-package com.odontologica;
+package com.paciente;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OdontologicaApplicationTests {
+class PacienteApplicationTests {
 
 	@Test
 	void contextLoads() {

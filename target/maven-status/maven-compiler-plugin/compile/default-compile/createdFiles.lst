@@ -1,1 +1,2 @@
-com\odontologica\OdontologicaApplication.class
+com\paciente\controller\PacienteController.class
+com\paciente\PacienteApplication.class

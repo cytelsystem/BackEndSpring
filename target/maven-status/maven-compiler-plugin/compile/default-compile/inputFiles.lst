@@ -1,2 +1,8 @@
-E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\paciente\PacienteApplication.java
-E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\paciente\controller\PacienteController.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\Integradora23Application.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\model\Paciente.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\model\Domicilio.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\controller\PacienteController.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\dao\DomicilioDao.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\service\PacienteService.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\dao\PacienteDAO.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\integradora23\service\DomicilioService.java

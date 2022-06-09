@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\odontolo\services\imp\OdontologoServiceImpl.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\odontolo\services\OdontologoService.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\odontolo\controller\OdontologoController.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\odontolo\dominio\Odontologo.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\odontolo\OdontoloApplication.java
+=======
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\paciente\PacienteApplication.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\paciente\controller\PacienteController.java
+>>>>>>> pacienteMVC

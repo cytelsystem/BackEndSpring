@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 com\odontolo\controller\OdontologoController.class
 com\odontolo\services\OdontologoService.class
 com\odontolo\services\imp\OdontologoServiceImpl.class
 com\odontolo\OdontoloApplication.class
 com\odontolo\dominio\Odontologo.class
+=======
+com\paciente\controller\PacienteController.class
+com\paciente\PacienteApplication.class
+>>>>>>> pacienteMVC

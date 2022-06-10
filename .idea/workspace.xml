@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="b03375bd-0fb4-453e-97a5-c1d15964a97e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/DomicilioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/DomicilioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/PacienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/PacienteDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/DomicilioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/PacienteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

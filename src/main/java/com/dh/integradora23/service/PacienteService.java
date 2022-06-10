@@ -11,8 +11,6 @@ public class PacienteService {
     PacienteDAO dao = new PacienteDAO();
     DomicilioService domicilioService = new DomicilioService();
 
-    public PacienteService() {
-    }
 
     public List<Paciente> getTodosLosPacientes(){
         List<Paciente> pacientes = this.dao.getPacientes();

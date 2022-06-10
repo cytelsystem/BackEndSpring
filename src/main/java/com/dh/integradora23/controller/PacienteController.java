@@ -11,12 +11,15 @@ public class PacienteController {
 
     private PacienteService service = new PacienteService();
 
-    @RequestMapping(method = RequestMethod.GET, path = "todos")
+
+    @RequestMapping("/")
     public List<Paciente> getTodosLosPacientes(){
+
         return service.getTodosLosPacientes();
     }
 
-    @GetMapping("pacientePorEmail")
+
+    @GetMapping("id")
     public String getPacientePorEmail(@RequestParam String email){
 
         return "<h1>" + service.getPacientePorEmail(email).toString() + "</h1>";

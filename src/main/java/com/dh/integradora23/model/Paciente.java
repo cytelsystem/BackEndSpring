@@ -12,23 +12,7 @@ public class Paciente {
     private LocalDate fechaDeIngreso;
     private Domicilio domicilio;
 
-    public Paciente(int id, String apellido, String nombre, String email, String dni, Date fechaDeIngreso) {
-        this.id = id;
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.email = email;
-        this.dni = dni;
-        this.fechaDeIngreso = fechaDeIngreso.toLocalDate();
-    }
 
-    public Paciente(int id, String apellido, String nombre, String email, String dni, LocalDate fechaDeIngreso) {
-        this.id = id;
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.email = email;
-        this.dni = dni;
-        this.fechaDeIngreso = fechaDeIngreso;
-    }
 
     public Paciente(String apellido, String nombre, String email) {
         this.apellido = apellido;

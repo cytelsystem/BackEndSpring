@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="" />
+    <list default="true" id="b03375bd-0fb4-453e-97a5-c1d15964a97e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/odontologica/OdontologicaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/medicamentosApi/medicamentosApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/odontologica/OdontologicaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/medicamentosApi/medicamentosApiApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,13 +36,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.medicamentosApi" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.odontologica.OdontologicaApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.medicamentosApi.OdontologicaApplication" />
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.odontologica.*" />
+          <option name="PATTERN" value="com.medicamentosApi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,5 +83,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring$PacienteApplication.ic" NAME="PacienteApplication Coverage Results" MODIFIED="1654798736965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.paciente.*</FILTER>
+    </SUITE>
   </component>
 </project>

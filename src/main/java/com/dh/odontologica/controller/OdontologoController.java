@@ -1,7 +1,7 @@
-package com.dh.integradora23.controller;
+package com.dh.odontologica.controller;
 
-import com.dh.integradora23.model.Odontologo;
-import com.dh.integradora23.service.OdontologoService;
+import com.dh.odontologica.model.Odontologo;
+import com.dh.odontologica.service.OdontologoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

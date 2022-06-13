@@ -1,6 +1,6 @@
-package com.dh.integradora23.dao;
+package com.dh.odontologica.dao;
 
-import com.dh.integradora23.model.Domicilio;
+import com.dh.odontologica.model.Domicilio;
 
 public class DomicilioDao {
 

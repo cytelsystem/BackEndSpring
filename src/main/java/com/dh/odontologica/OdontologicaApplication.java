@@ -1,13 +1,13 @@
-package com.dh.integradora23;
+package com.dh.odontologica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Integradora23Application {
+public class OdontologicaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Integradora23Application.class, args);
+		SpringApplication.run(OdontologicaApplication.class, args);
 	}
 
 }

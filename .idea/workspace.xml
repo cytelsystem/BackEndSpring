@@ -6,6 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b03375bd-0fb4-453e-97a5-c1d15964a97e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/Integradora23Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/controller/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/DomicilioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/dao/DomicilioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/OdontologoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/dao/OdontologoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/dao/PacienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/dao/PacienteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/model/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Domicilio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/model/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/integradora23/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/integradora23/Integradora23ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/Integradora23ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +49,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="Integradora23Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dh.integradora23.Integradora23Application" />
+    <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplication" />
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dh.integradora23.*" />
+          <option name="PATTERN" value="com.dh.odontologica.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,7 +64,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Integradora23Application" />
+        <item itemvalue="Application.OdontologicaApplication" />
       </list>
     </recent_temporary>
   </component>

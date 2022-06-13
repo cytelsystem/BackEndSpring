@@ -1,7 +1,7 @@
-package com.dh.integradora23.service;
+package com.dh.odontologica.service;
 
-import com.dh.integradora23.dao.DomicilioDao;
-import com.dh.integradora23.model.Domicilio;
+import com.dh.odontologica.dao.DomicilioDao;
+import com.dh.odontologica.model.Domicilio;
 
 public class DomicilioService {
 

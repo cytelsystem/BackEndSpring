@@ -1,4 +1,4 @@
-package com.dh.integradora23.model;
+package com.dh.odontologica.model;
 
 public class Odontologo {
     private int id;

@@ -1,7 +1,7 @@
-package com.dh.integradora23.dao;
+package com.dh.odontologica.dao;
 
-import com.dh.integradora23.model.Domicilio;
-import com.dh.integradora23.model.Paciente;
+import com.dh.odontologica.model.Domicilio;
+import com.dh.odontologica.model.Paciente;
 
 import java.util.ArrayList;
 import java.util.List;

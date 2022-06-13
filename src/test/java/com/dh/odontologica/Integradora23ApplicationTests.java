@@ -1,10 +1,10 @@
-package com.dh.integradora23;
+package com.dh.odontologica;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Integradora23ApplicationTests {
+class odontologicaApplicationTests {
 
 	@Test
 	void contextLoads() {

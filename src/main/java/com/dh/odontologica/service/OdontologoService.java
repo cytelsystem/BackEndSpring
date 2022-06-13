@@ -1,8 +1,7 @@
-package com.dh.integradora23.service;
+package com.dh.odontologica.service;
 
-import com.dh.integradora23.dao.OdontologoDao;
-import com.dh.integradora23.model.Odontologo;
-import com.dh.integradora23.model.Paciente;
+import com.dh.odontologica.dao.OdontologoDao;
+import com.dh.odontologica.model.Odontologo;
 
 import java.util.List;
 

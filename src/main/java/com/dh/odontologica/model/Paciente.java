@@ -1,6 +1,5 @@
-package com.dh.integradora23.model;
+package com.dh.odontologica.model;
 
-import java.sql.Date;
 import java.time.LocalDate;
 
 public class Paciente {

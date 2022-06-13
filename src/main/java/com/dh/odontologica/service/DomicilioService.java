@@ -1,6 +1,6 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.dao.DomicilioDao;
+import com.dh.odontologica.persistence.dao.impl.DomicilioDao;
 import com.dh.odontologica.model.Domicilio;
 
 public class DomicilioService {

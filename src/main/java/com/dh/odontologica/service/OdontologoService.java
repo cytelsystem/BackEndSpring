@@ -1,6 +1,6 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.dao.OdontologoDao;
+import com.dh.odontologica.persistence.dao.impl.OdontologoDao;
 import com.dh.odontologica.model.Odontologo;
 
 import java.util.List;

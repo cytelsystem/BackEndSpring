@@ -1,4 +1,4 @@
-package com.dh.odontologica.dao;
+package com.dh.odontologica.persistence.dao.impl;
 
 import com.dh.odontologica.model.Domicilio;
 import com.dh.odontologica.model.Paciente;

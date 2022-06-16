@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/OdontologoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/OdontologoDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/Integradora23ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

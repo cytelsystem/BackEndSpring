@@ -23,7 +23,7 @@ public class OdontologoController {
         return ResponseEntity.ok(odontologoService.guardaOdontologoService(odontologo));
     }
 
-    @DeleteMapping("/eliminar/{id}")
+    @DeleteMapping("/eliminarOdontologo/{id}")
     public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id) {
         HttpHeaders responseHeaders = new HttpHeaders();
 
@@ -41,7 +41,7 @@ public class OdontologoController {
 
     }
 
-    @PutMapping("/actualizar")
+    @PutMapping("/actualizarOdontologo")
     public ResponseEntity<Odontologo> actualizar(@RequestBody Odontologo odontologo) {
         ResponseEntity<Odontologo> response = null;
 
@@ -56,12 +56,12 @@ public class OdontologoController {
 
 
 
-    @RequestMapping("odontologos")
+    @RequestMapping("/ConsultarTodosOdontologos")
     public ResponseEntity<List<Odontologo>> getTodosOdontologos(){
         return ResponseEntity.ok(odontologoService.listarTodosOdontologos());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/buscarPorIdOdontologo/{id}")
     public ResponseEntity<Odontologo> buscar(@PathVariable Long id) {
         Odontologo odontologo = odontologoService.buscarOdontologoporID(id);
 

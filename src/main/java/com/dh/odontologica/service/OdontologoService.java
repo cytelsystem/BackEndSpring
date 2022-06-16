@@ -3,10 +3,11 @@ package com.dh.odontologica.service;
 
 import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.persistence.dao.Dao;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
+@Service
 public class OdontologoService {
 
 

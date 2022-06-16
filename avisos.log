@@ -1333,3 +1333,33 @@
 [2022-06-16 12:14:18] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
 [2022-06-16 12:14:18] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
 [2022-06-16 12:14:18] [ INFO ] [OdontologoDAOH2:180] Consulta de todos los registros fue exitosa
+[2022-06-16 12:15:41] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:15:42] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:15:42] [ INFO ] [OdontologoDAOH2:136] Consulta por ID No 28 fue exitosa
+[2022-06-16 12:16:02] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:02] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:02] [ INFO ] [OdontologoDAOH2:136] Consulta por ID No 28 fue exitosa
+[2022-06-16 12:16:02] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:02] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:02] [ INFO ] [OdontologoDAOH2:62] Eliminacion registro No 28 fue exitosa
+[2022-06-16 12:16:07] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:07] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:07] [ INFO ] [OdontologoDAOH2:180] Consulta de todos los registros fue exitosa
+[2022-06-16 12:16:48] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:48] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:48] [ INFO ] [OdontologoDAOH2:136] Consulta por ID No 29 fue exitosa
+[2022-06-16 12:16:48] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:48] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:48] [ INFO ] [OdontologoDAOH2:88] Registro Actualizado No 29 fue exitoso
+[2022-06-16 12:16:54] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:16:54] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:16:54] [ INFO ] [OdontologoDAOH2:180] Consulta de todos los registros fue exitosa
+[2022-06-16 12:17:10] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:17:10] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:17:10] [ INFO ] [OdontologoDAOH2:136] Consulta por ID No 29 fue exitosa
+[2022-06-16 12:17:10] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:17:10] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:17:10] [ INFO ] [OdontologoDAOH2:88] Registro Actualizado No 29 fue exitoso
+[2022-06-16 12:17:14] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-16 12:17:14] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-16 12:17:14] [ INFO ] [OdontologoDAOH2:180] Consulta de todos los registros fue exitosa

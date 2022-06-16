@@ -4,6 +4,7 @@ import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.persistence.dao.Dao;
 import com.dh.odontologica.persistence.dao.util.ConfiguracionJDBC;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,6 +13,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Repository
 public class OdontologoDAOH2 implements Dao<Odontologo> {
 
     private Logger logger = Logger.getLogger(OdontologoDAOH2.class);

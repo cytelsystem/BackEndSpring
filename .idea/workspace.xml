@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="" />
+    <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/OdontologoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/OdontologoDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/Integradora23ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -31,11 +48,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.dh.odontologica.persistence.dao.impl" />
       <recent name="com.dh.odontologica.persistence" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dh.odontologica" />
     </key>
   </component>
   <component name="RunManager">
@@ -61,7 +86,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b03375bd-0fb4-453e-97a5-c1d15964a97e" name="Changes" comment="" />
+      <changelist id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="" />
       <created>1654902505589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -80,6 +105,13 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.log4j.Logger" memberName="parent" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Spring$PacienteApplication.ic" NAME="PacienteApplication Coverage Results" MODIFIED="1654798736965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

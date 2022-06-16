@@ -1,24 +1,29 @@
 package com.dh.odontologica.model;
 
 public class Odontologo {
-    private int id;
+    private Long id;
     private String nombre;
     private String apellido;
     private String matricula;
 
-    public Odontologo(int id, String nombre, String apellido, String matricula) {
+    public Odontologo() {
+
+    }
+
+    public Odontologo(Long id, String nombre, String apellido, String matricula) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.matricula = matricula;
     }
 
+
     //************************Getter y setter***************************//
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getNombre() {

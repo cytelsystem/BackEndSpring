@@ -6,8 +6,7 @@ public interface Dao<T> {
 
     public T crear(T t);
     public void eliminar(Long id);
-    public T consultarPorId(int id);
-    public List<T> consultarTodos();
-
-
+    public T actualizar(T t);
+    public T consultarPorId(Long id);
+    List<T> consultarTodos();
 }

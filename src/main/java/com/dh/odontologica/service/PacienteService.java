@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PacienteService {
 
-    PacienteDAO dao = new PacienteDAO();
+    PacienteDAO dao = new PacienteDAO(); //donde esta la base de datos paciente
     DomicilioService domicilioService = new DomicilioService();
 
 
@@ -15,7 +15,8 @@ public class PacienteService {
         List<Paciente> pacientes = this.dao.getPacientes();
 
         for (Paciente p: pacientes){
-            p.setDomicilio(domicilioService.getPorId(p.getDomicilio().getId()));
+//            p.setDomicilio(domicilioService.getPorId(p.getDomicilio().getId()));
+
         }
 
         return pacientes;

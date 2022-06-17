@@ -23,6 +23,13 @@ create table if not exists odontologos (
     numeroMatricula varchar(255)
     );
 
+create table if not exists turnos (
+    id int auto_increment primary key,
+    nombre varchar(255),
+    apellido varchar(255),
+    numeroMatricula varchar(255)
+    );
+
 
 
 -- Pueden agregar acá sentencias Insert para precargar datos.

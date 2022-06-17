@@ -13,7 +13,10 @@ public class OdontologoService {
 
     private Dao<Odontologo> odontologoIDAO; // comunicacion con la interface
 
+    //******************************Constructor***************************************//
+
     public OdontologoService(Dao<Odontologo> odontologoIDAO) {
+
         this.odontologoIDAO = odontologoIDAO;
     }
 
@@ -37,8 +40,10 @@ public class OdontologoService {
 
 
     public void eliminar(Long id) {
+
         odontologoIDAO.eliminar(id);
     }
+
     public Odontologo actualizar(Odontologo odontologo) {
 
         return odontologoIDAO.actualizar(odontologo);

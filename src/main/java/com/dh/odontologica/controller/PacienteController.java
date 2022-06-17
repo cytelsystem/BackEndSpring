@@ -12,7 +12,7 @@ public class PacienteController {
     private PacienteService service = new PacienteService();
 
 
-    @RequestMapping("/")
+    @RequestMapping("/ConsultarTodosPacientes")
     public List<Paciente> getTodosLosPacientes(){
 
         return service.getTodosLosPacientes();

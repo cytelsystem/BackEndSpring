@@ -53,19 +53,16 @@ public class OdontologoController {
         return response;
     }
 
-
-
-
-    @RequestMapping("/ConsultarTodosOdontologos")
-    public ResponseEntity<List<Odontologo>> getTodosOdontologos(){
-        return ResponseEntity.ok(odontologoService.listarTodosOdontologos());
-    }
-
     @GetMapping("/buscarPorIdOdontologo/{id}")
     public ResponseEntity<Odontologo> buscar(@PathVariable Long id) {
         Odontologo odontologo = odontologoService.buscarOdontologoporID(id);
 
         return ResponseEntity.ok(odontologo);
+    }
+
+    @RequestMapping("/ConsultarTodosOdontologos")
+    public ResponseEntity<List<Odontologo>> getTodosOdontologos(){
+        return ResponseEntity.ok(odontologoService.listarTodosOdontologos());
     }
 
 

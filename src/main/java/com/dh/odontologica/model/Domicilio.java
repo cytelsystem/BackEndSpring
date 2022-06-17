@@ -1,20 +1,35 @@
 package com.dh.odontologica.model;
 
 public class Domicilio {
+
+
+    private Long id;
     private String calle;
     private String numero;
     private String localidad;
     private String provincia;
-    private int id;
+
+    //**********************************Constructor*****************************************//
 
     public Domicilio() {
     }
+
 
     public Domicilio(String calle, String numero, String localidad, String provincia) {
         this.setCalle(calle);
         this.setNumero(numero);
         this.setLocalidad(localidad);
         this.setProvincia(provincia);
+    }
+
+    //**********************************Getter y Setter**********************************//
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getCalle() {
@@ -49,7 +64,8 @@ public class Domicilio {
         this.provincia = provincia;
     }
 
-    public int getId() {
-        return this.id;
-    }
+    //***************************************************************************************//
+
+
 }
+

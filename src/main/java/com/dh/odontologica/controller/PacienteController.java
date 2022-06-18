@@ -18,26 +18,10 @@ public class PacienteController {
     @PostMapping("/CrearPaciente")
     public ResponseEntity<Paciente> crearOdontologo(@RequestBody Paciente paciente){
 
-        Paciente prueba = new Paciente();
-        prueba = paciente;
-        System.out.println(prueba);
+        System.out.println(paciente);
         return ResponseEntity.ok(pacienteService.guardaPacienteService(paciente));
     }
 
 
-
-
-//    @RequestMapping("/ConsultarTodosPacientes")
-//    public List<Paciente> getTodosLosPacientes(){
-//
-//        return pacienteService.getTodosLosPacientes();
-//    }
-
-//
-//    @GetMapping("id")
-//    public String getPacientePorEmail(@RequestParam String email){
-//
-//        return "<h1>" + pacienteService.getPacientePorEmail(email).toString() + "</h1>";
-//    }
 
 }

@@ -1497,3 +1497,159 @@
 [2022-06-17 14:03:54] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
 [2022-06-17 14:03:54] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
 [2022-06-17 14:03:54] [ ERROR] [DomicilioDAOH2:97] No se pudo actualizar el registro
+[2022-06-17 14:05:10] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 14:05:10] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 14:05:10] [ INFO ] [DomicilioDAOH2:190] Consulta de todos los registros fue exitosa
+[2022-06-17 14:05:16] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 14:05:16] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 14:05:16] [ INFO ] [DomicilioDAOH2:144] Consulta por ID No 1 fue exitosa
+[2022-06-17 14:05:16] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 14:05:16] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 14:05:16] [ INFO ] [DomicilioDAOH2:94] Registro Actualizado No 1 fue exitoso
+[2022-06-17 14:05:23] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 14:05:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 14:05:23] [ INFO ] [DomicilioDAOH2:190] Consulta de todos los registros fue exitosa
+[2022-06-17 21:53:36] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 21:53:36] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-17 21:54:34] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 21:54:34] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-17 21:54:47] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 21:54:47] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-17 21:55:52] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 21:55:53] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 21:55:53] [ INFO ] [OdontologoDAOH2:183] Consulta de todos los registros fue exitosa
+[2022-06-17 21:56:16] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 21:56:16] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 21:56:16] [ ERROR] [PacienteDAOH2:48] No se pudo guardar la informacion
+[2022-06-17 22:19:23] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 22:19:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 22:19:23] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-17 22:21:35] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-17 22:21:35] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-17 22:21:35] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 09:40:34] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 09:40:35] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 09:41:23] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 09:41:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 09:58:40] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 09:58:41] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 09:58:41] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 09:59:54] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 09:59:54] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 10:00:26] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:00:26] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:00:26] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 10:11:30] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:11:30] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:11:48] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:11:48] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:17:10] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:17:11] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:19:19] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:19:19] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:22:32] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:22:33] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:25:00] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:25:01] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:32:53] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:32:54] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:35:37] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:35:38] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:38:10] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:38:11] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:41:13] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:41:13] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:41:14] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:41:14] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 10:48:22] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 10:48:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:25:12] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:25:13] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:33:22] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:33:25] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:45:50] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:45:52] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:53:20] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:53:22] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:53:22] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 12:54:29] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:54:29] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:54:29] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 12:55:49] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 12:55:49] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 12:55:49] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente
+[2022-06-18 13:04:20] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:04:22] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 13:04:22] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente Paciente
+[2022-06-18 13:54:35] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:54:37] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 13:56:09] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:56:09] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 13:56:39] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:56:39] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 13:57:05] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:57:05] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 13:57:05] [ INFO ] [OdontologoDAOH2:183] Consulta de todos los registros fue exitosa
+[2022-06-18 13:57:27] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:57:27] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 13:57:27] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente Paciente
+[2022-06-18 13:59:46] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 13:59:46] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 13:59:46] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente Paciente
+[2022-06-18 14:05:06] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:05:07] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:05:07] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente Paciente
+[2022-06-18 14:07:13] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:07:13] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:07:13] [ INFO ] [PacienteDAOH2:45] Informacion Guardada correctamente Paciente
+[2022-06-18 14:12:34] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:12:35] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:12:35] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 14:14:00] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:14:01] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:14:01] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 14:17:57] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:17:57] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:17:57] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 14:18:25] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:18:25] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:18:25] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 14:20:18] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 14:20:18] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 14:20:18] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 15:23:02] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:23:03] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 15:23:55] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:23:55] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 15:24:11] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:24:11] [ ERROR] [ConfiguracionJDBC:42] La conexion a la base de datos presenta problemas
+[2022-06-18 15:24:56] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:24:56] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:24:56] [ INFO ] [OdontologoDAOH2:183] Consulta de todos los registros fue exitosa
+[2022-06-18 15:25:06] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:25:06] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:25:06] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 15:25:48] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:25:48] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:25:48] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente
+[2022-06-18 15:32:22] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:32:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:32:23] [ INFO ] [OdontologoDAOH2:183] Consulta de todos los registros fue exitosa
+[2022-06-18 15:34:32] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:34:32] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:34:32] [ INFO ] [PacienteDAOH2:43] Informacion Guardada correctamente Paciente
+[2022-06-18 15:34:57] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:34:57] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:34:58] [ INFO ] [PacienteDAOH2:43] Informacion Guardada correctamente Paciente
+[2022-06-18 15:44:33] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:44:33] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:44:33] [ INFO ] [PacienteDAOH2:43] Informacion Guardada correctamente Paciente
+[2022-06-18 15:44:43] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:44:43] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:44:43] [ INFO ] [PacienteDAOH2:43] Informacion Guardada correctamente Paciente
+[2022-06-18 15:47:56] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 15:47:57] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 15:47:57] [ INFO ] [PacienteDAOH2:43] Informacion Guardada correctamente Paciente
+[2022-06-18 16:06:23] [ INFO ] [ConfiguracionJDBC:52] Se cargo correctamente el driver jdbc
+[2022-06-18 16:06:23] [ INFO ] [ConfiguracionJDBC:38] Se ha establecido correctamente la conexion a la base de datos
+[2022-06-18 16:06:23] [ INFO ] [PacienteDAOH2:44] Informacion Guardada correctamente Paciente

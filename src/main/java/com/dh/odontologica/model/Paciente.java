@@ -1,33 +1,36 @@
 package com.dh.odontologica.model;
 
-import java.time.LocalDate;
+import java.sql.Date;
+
 
 public class Paciente {
 
     private Long id;
-    private String apellido;
     private String nombre;
+    private String apellido;
     private String email;
     private String dni;
-    private LocalDate fechaDeIngreso;
-    private Domicilio domicilio;
+    private Date fechaDeIngreso;
 
 
     //**************************************Constructores********************************************//
 
-    public Paciente(String apellido, String nombre, String email) {
-        this.apellido = apellido;
-        this.nombre = nombre;
-        this.email = email;
-        this.fechaDeIngreso = LocalDate.now();
+
+    public Paciente() {
+
     }
 
-    public Paciente(String apellido, String nombre, String email, Domicilio domicilio) {
-        this(apellido, nombre, email);
-        this.domicilio = domicilio;
+    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.dni = dni;
+        this.fechaDeIngreso = fechaDeIngreso;
     }
 
     //**************************************Getter y Setter****************************************//
+
     public Long getId() {
         return id;
     }
@@ -36,20 +39,20 @@ public class Paciente {
         this.id = id;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getEmail() {
@@ -68,39 +71,33 @@ public class Paciente {
         this.dni = dni;
     }
 
-    public LocalDate getFechaDeIngreso() {
+    public Date getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(LocalDate fechaDeIngreso) {
+    public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 
-    //*****************************************toString*****************************************//
+//*****************************************toString*****************************************//
 
     @Override
     public String toString() {
         return "Paciente{" +
                 "id=" + id +
-                ", apellido='" + apellido + '\'' +
                 ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
                 ", email='" + email + '\'' +
                 ", dni='" + dni + '\'' +
-                ", fechaDeIngreso='" + fechaDeIngreso.toString() + '\'' +
+                ", fechaDeIngreso='" + fechaDeIngreso + '\'' +
                 '}';
     }
 
+
     //*************************************Metodos****************************************//
 
-    public Domicilio getDomicilio() {
 
-        return domicilio;
-    }
 
-    public void setDomicilio(Domicilio domicilio) {
-
-        this.domicilio = domicilio;
-    }
 
     //***********************************************************************************************//
 }

@@ -2,10 +2,10 @@ E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\model\Domici
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\util\ConfiguracionJDBC.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\OdontologoController.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\OdontologicaApplication.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\impl\PacienteDAOH2.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\impl\OdontologoDAOH2.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\service\DomicilioService.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\PacienteController.java
-E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\impl\PacienteDAO.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\impl\DomicilioDao.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\dao\impl\DomicilioDAOH2.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\model\Paciente.java

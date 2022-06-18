@@ -1,6 +1,6 @@
 com\dh\odontologica\persistence\dao\impl\DomicilioDao.class
+com\dh\odontologica\persistence\dao\impl\PacienteDAOH2.class
 com\dh\odontologica\model\Paciente.class
-com\dh\odontologica\persistence\dao\impl\PacienteDAO.class
 com\dh\odontologica\service\DomicilioService.class
 com\dh\odontologica\model\Domicilio.class
 com\dh\odontologica\persistence\dao\util\ConfiguracionJDBC.class

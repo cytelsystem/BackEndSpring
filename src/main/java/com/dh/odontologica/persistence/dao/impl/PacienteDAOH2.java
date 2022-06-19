@@ -82,14 +82,14 @@ public class PacienteDAOH2 implements Dao<Paciente> {
 
         try (Connection connetion = jdbc.conectarConBaseDeDatos()) {
 
-            preparedStatement = connetion.prepareStatement("UPDATE pacientes SET nombre = ?, apellido = ?, email = ?, dni, fechaDeIngreso  WHERE id = ?");
+            preparedStatement = connetion.prepareStatement("UPDATE pacientes SET nombre = ?, apellido = ?, email = ?, dni = ?, fechaDeIngreso = ?  WHERE id = ?");
 
             preparedStatement.setString(1, paciente.getNombre());
             preparedStatement.setString(2, paciente.getApellido());
             preparedStatement.setString(3, paciente.getEmail());
-            preparedStatement.setString(3, paciente.getDni());
-//            preparedStatement.setDate(3, (Date) paciente.getFechaDeIngreso());
-            preparedStatement.setLong(4, paciente.getId());
+            preparedStatement.setString(4, paciente.getDni());
+            preparedStatement.setDate(5, (Date) paciente.getFechaDeIngreso());
+            preparedStatement.setLong(6, paciente.getId());
 
             preparedStatement.executeUpdate();
 
@@ -128,7 +128,7 @@ public class PacienteDAOH2 implements Dao<Paciente> {
                 String apellidoPaciente = resultado.getString("apellido");
                 String emailPaciente = resultado.getString("email");
                 String dniPaciente = resultado.getString("dni");
-//                Date fechaDeIngresoPaciente = resultado.getDate("fechaDeIngreso");
+                Date fechaDeIngresoPaciente = resultado.getDate("fechaDeIngreso");
 
 
                 paciente = new Paciente();
@@ -138,7 +138,7 @@ public class PacienteDAOH2 implements Dao<Paciente> {
                 paciente.setApellido(apellidoPaciente);
                 paciente.setEmail(emailPaciente);
                 paciente.setDni(dniPaciente);
-//                paciente.setFechaDeIngreso(fechaDeIngresoPaciente);
+                paciente.setFechaDeIngreso(fechaDeIngresoPaciente);
 
 
             }
@@ -178,7 +178,7 @@ public class PacienteDAOH2 implements Dao<Paciente> {
                 String apellidoPaciente = resultado.getString("apellido");
                 String emailPaciente = resultado.getString("email");
                 String dniPaciente = resultado.getString("dni");
-//                LocalDate fechaDeIngresoPaciente = resultado.getDate("fechaDeIngreso");
+                Date fechaDeIngresoPaciente = resultado.getDate("fechaDeIngreso");
 
                 Paciente paciente = new Paciente();
 
@@ -187,7 +187,7 @@ public class PacienteDAOH2 implements Dao<Paciente> {
                 paciente.setApellido(apellidoPaciente);
                 paciente.setEmail(emailPaciente);
                 paciente.setDni(dniPaciente);
-//                paciente.setFechaDeIngreso(fechaDeIngresoPaciente);
+                paciente.setFechaDeIngreso(fechaDeIngresoPaciente);
 
                 pacientes.add(paciente);
             }

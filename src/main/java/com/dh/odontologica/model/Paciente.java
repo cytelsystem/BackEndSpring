@@ -11,6 +11,7 @@ public class Paciente {
     private String email;
     private String dni;
     private Date fechaDeIngreso;
+    private Domicilio domicilio;
 
 
     //**************************************Constructores********************************************//
@@ -20,13 +21,14 @@ public class Paciente {
 
     }
 
-    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso) {
+    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.dni = dni;
         this.fechaDeIngreso = fechaDeIngreso;
+        this.domicilio = domicilio;
     }
 
     //**************************************Getter y Setter****************************************//
@@ -79,7 +81,15 @@ public class Paciente {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 
-//*****************************************toString*****************************************//
+    public Domicilio getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(Domicilio domicilio) {
+        this.domicilio = domicilio;
+    }
+
+    //*****************************************toString*****************************************//
 
     @Override
     public String toString() {
@@ -89,11 +99,10 @@ public class Paciente {
                 ", apellido='" + apellido + '\'' +
                 ", email='" + email + '\'' +
                 ", dni='" + dni + '\'' +
-                ", fechaDeIngreso='" + fechaDeIngreso + '\'' +
+                ", fechaDeIngreso=" + fechaDeIngreso +
+                ", domicilio=" + domicilio +
                 '}';
     }
-
-
 
 
     //*************************************Metodos****************************************//

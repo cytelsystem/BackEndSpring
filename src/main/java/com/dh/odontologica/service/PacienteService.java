@@ -3,6 +3,7 @@ package com.dh.odontologica.service;
 import com.dh.odontologica.persistence.dao.Dao;
 import com.dh.odontologica.model.Paciente;
 import java.util.List;
+import java.util.Date;
 
 public class PacienteService {
 
@@ -30,7 +31,6 @@ public class PacienteService {
     //*****************************Metodos************************************************//
 
     public Paciente guardaPacienteService(Paciente o) {
-
         return pacienteIDAO.crear(o);
     }
 

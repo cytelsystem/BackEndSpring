@@ -7,16 +7,6 @@ import java.util.List;
 
 public class DomicilioService {
 
-    //*********************Anterior******************//
-
-//    DomicilioDao dao = new DomicilioDao();
-
-
-//
-//    public Domicilio getPorId(Long id) {
-//
-//        return dao.findById(id);
-//    }
 
     private Dao<Domicilio> domicilioIdao;  // comunicacion con la interface
 

@@ -2,9 +2,15 @@ package com.dh.odontologica.controller;
 
 
 import ch.qos.logback.core.net.SyslogOutputStream;
+import com.dh.odontologica.model.Domicilio;
 import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.model.Paciente;
+import com.dh.odontologica.model.Turno;
+import com.dh.odontologica.persistence.dao.impl.DomicilioDAOH2;
+import com.dh.odontologica.persistence.dao.impl.OdontologoDAOH2;
 import com.dh.odontologica.persistence.dao.impl.PacienteDAOH2;
+import com.dh.odontologica.service.DomicilioService;
+import com.dh.odontologica.service.OdontologoService;
 import com.dh.odontologica.service.PacienteService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -19,12 +25,27 @@ public class PacienteController {
 
 
     PacienteService pacienteService = new PacienteService(new PacienteDAOH2());
+    private DomicilioService domicilioService = new DomicilioService(new DomicilioDAOH2());
+
 
     @PostMapping("/CrearPaciente")
-    public ResponseEntity<Paciente> crearOdontologo(@RequestBody Paciente paciente){
+    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
+
+        ResponseEntity<Paciente> respuesta;
+
+        Domicilio d = domicilioService.buscarDomicilioPorId(paciente.getDomicilio().getId());
+
+        System.out.println(d);
+
+        if(d != null){
+            pacienteService.guardaPacienteService(paciente);
+            respuesta = ResponseEntity.ok(paciente);
+        }else{
+            respuesta = ResponseEntity.badRequest().body(null);
+        }
 
         System.out.println(paciente);
-        return ResponseEntity.ok(pacienteService.guardaPacienteService(paciente));
+        return respuesta;
     }
 
 

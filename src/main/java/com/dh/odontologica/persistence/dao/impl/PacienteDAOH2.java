@@ -28,13 +28,14 @@ public class PacienteDAOH2 implements Dao<Paciente> {
 
         try (Connection connetion = jdbc.conectarConBaseDeDatos()) {
 
-            preparedStatement = connetion.prepareStatement("INSERT into pacientes (Nombre, Apellido, email,dni,fechadeingreso) VALUES (?,?,?,?,?)");
+            preparedStatement = connetion.prepareStatement("INSERT into pacientes (Nombre, Apellido, email,dni,fechadeingreso, domicilioId) VALUES (?,?,?,?,?,?)");
 
             preparedStatement.setString(1, paciente.getNombre());
             preparedStatement.setString(2, paciente.getApellido());
             preparedStatement.setString(3, paciente.getEmail());
             preparedStatement.setString(4, paciente.getDni());
             preparedStatement.setDate(5, Util.utilDateToSqlDate(paciente.getFechaDeIngreso()));
+            preparedStatement.setLong(6, paciente.getDomicilio().getId());
 
 
 

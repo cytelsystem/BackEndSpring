@@ -3,26 +3,27 @@ package com.dh.odontologica.controller;
 import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.model.Paciente;
 import com.dh.odontologica.model.Turno;
-import com.dh.odontologica.persistence.dao.impl.OdontologoDAOH2;
-import com.dh.odontologica.persistence.dao.impl.PacienteDAOH2;
-import com.dh.odontologica.persistence.dao.impl.TurnoDAOH2;
 import com.dh.odontologica.service.OdontologoService;
 import com.dh.odontologica.service.PacienteService;
 import com.dh.odontologica.service.TurnoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
 @RestController
 public class TurnoController {
 
-    private TurnoService turnoService = new TurnoService(new TurnoDAOH2());
-    private PacienteService pacienteService = new PacienteService(new PacienteDAOH2());
-    private OdontologoService odontologoService = new OdontologoService(new OdontologoDAOH2());
+
+    @Autowired
+    private TurnoService turnoService;
+    @Autowired
+    private PacienteService pacienteService;
+    @Autowired
+    private OdontologoService odontologoService;
 
 
     @PostMapping("/CrearTurno")
@@ -44,7 +45,6 @@ public class TurnoController {
         System.out.println(o);
         return respuesta;
     }
-
 
     @DeleteMapping("/eliminarTurno/{id}")
     public ResponseEntity<String> eliminarTurno(@PathVariable Long id) {

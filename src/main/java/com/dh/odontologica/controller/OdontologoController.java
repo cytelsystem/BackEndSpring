@@ -1,22 +1,20 @@
 package com.dh.odontologica.controller;
 
 import com.dh.odontologica.model.Odontologo;
-import com.dh.odontologica.persistence.dao.impl.OdontologoDAOH2;
 import com.dh.odontologica.service.OdontologoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
 @RestController
 public class OdontologoController {
 
-
-
-    OdontologoService odontologoService = new OdontologoService(new OdontologoDAOH2());
+    @Autowired
+    OdontologoService odontologoService;
 
     @PostMapping("/CrearOdontologo")
     public ResponseEntity<Odontologo> crearOdontologo(@RequestBody Odontologo odontologo){

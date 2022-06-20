@@ -2,25 +2,19 @@ package com.dh.odontologica.service;
 
 import com.dh.odontologica.persistence.dao.Dao;
 import com.dh.odontologica.model.Domicilio;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
 
+@Service
 public class DomicilioService {
 
-
-    private Dao<Domicilio> domicilioIdao;  // comunicacion con la interface
+    private Dao<Domicilio> domicilioIdao;
 
     //***************************Constructor*************************************//
-
-
-    public DomicilioService() {
-
-    }
 
     public DomicilioService(Dao<Domicilio> domicilioIdao) {
         this.domicilioIdao = domicilioIdao;
     }
-
 
     //****************************Getter y Setter***********************************//
 
@@ -63,7 +57,6 @@ public class DomicilioService {
         return domicilioIdao.consultarTodos();
 
     }
-
 
     //****************************************************************************//
 

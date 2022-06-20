@@ -2,9 +2,11 @@ package com.dh.odontologica.service;
 
 import com.dh.odontologica.model.Turno;
 import com.dh.odontologica.persistence.dao.Dao;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
 
+
+@Service
 public class TurnoService {
 
     private Dao<Turno> turnoDao;
@@ -24,7 +26,6 @@ public class TurnoService {
     public void setTurnoDao(Dao<Turno> turnoDao) {
         this.turnoDao = turnoDao;
     }
-
 
     //************************************Metodos**********************************************//
 
@@ -50,9 +51,6 @@ public class TurnoService {
         return turnoDao.consultarTodos();
 
     }
-
-
-
 
     //*****************************************************************************************//
 

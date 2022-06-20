@@ -1,31 +1,24 @@
 package com.dh.odontologica.controller;
 
-
-import ch.qos.logback.core.net.SyslogOutputStream;
 import com.dh.odontologica.model.Domicilio;
-import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.model.Paciente;
-import com.dh.odontologica.model.Turno;
-import com.dh.odontologica.persistence.dao.impl.DomicilioDAOH2;
-import com.dh.odontologica.persistence.dao.impl.OdontologoDAOH2;
-import com.dh.odontologica.persistence.dao.impl.PacienteDAOH2;
 import com.dh.odontologica.service.DomicilioService;
-import com.dh.odontologica.service.OdontologoService;
 import com.dh.odontologica.service.PacienteService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
 @RestController
 public class PacienteController {
 
-
-    PacienteService pacienteService = new PacienteService(new PacienteDAOH2());
-    private DomicilioService domicilioService = new DomicilioService(new DomicilioDAOH2());
+    @Autowired
+    PacienteService pacienteService;
+    @Autowired
+    DomicilioService domicilioService;
 
 
     @PostMapping("/CrearPaciente")

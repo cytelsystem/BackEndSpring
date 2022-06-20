@@ -1,7 +1,5 @@
 package com.dh.odontologica.model;
 
-
-
 import java.sql.Date;
 import java.util.Objects;
 
@@ -9,12 +7,10 @@ public class Turno {
 
     private Long id;
     private Date date;
-
     private Paciente paciente;
     private Odontologo odontologo;
 
     //***********************************Constructores***************************************//
-
 
     public Turno() {
 

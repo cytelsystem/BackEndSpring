@@ -1,13 +1,10 @@
 package com.dh.odontologica.persistence.dao.impl;
 
-import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.model.Turno;
 import com.dh.odontologica.persistence.dao.Dao;
 import com.dh.odontologica.persistence.dao.util.ConfiguracionJDBC;
-import com.dh.odontologica.persistence.dao.util.Util;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

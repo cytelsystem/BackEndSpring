@@ -6,6 +6,8 @@ public class Odontologo {
     private String apellido;
     private String matricula;
 
+    //*****************************Constructores***********************************//
+
     public Odontologo() {
 
     }
@@ -16,7 +18,6 @@ public class Odontologo {
         this.apellido = apellido;
         this.matricula = matricula;
     }
-
 
     //************************Getter y setter***************************//
 

@@ -1,25 +1,21 @@
 package com.dh.odontologica.controller;
 
-
-
-
 import com.dh.odontologica.model.Domicilio;
 import com.dh.odontologica.persistence.dao.impl.DomicilioDAOH2;
 import com.dh.odontologica.service.DomicilioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 
 @RestController
 public class DomicilioController {
 
-
-
-    DomicilioService domicilioService = new DomicilioService(new DomicilioDAOH2());
+    @Autowired
+    DomicilioService domicilioService;
 
     @PostMapping("/CrearDomicilio")
     public ResponseEntity<Domicilio> crearDomicilio(@RequestBody Domicilio domicilio){

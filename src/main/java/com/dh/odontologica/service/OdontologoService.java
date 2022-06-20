@@ -1,17 +1,14 @@
 package com.dh.odontologica.service;
 
-
 import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.persistence.dao.Dao;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
 public class OdontologoService {
 
-
-    private Dao<Odontologo> odontologoIDAO; // comunicacion con la interface
+    private Dao<Odontologo> odontologoIDAO;
 
     //******************************Constructor***************************************//
 
@@ -38,7 +35,6 @@ public class OdontologoService {
         return odontologoIDAO.crear(o);
     }
 
-
     public void eliminar(Long id) {
 
         odontologoIDAO.eliminar(id);
@@ -48,7 +44,6 @@ public class OdontologoService {
 
         return odontologoIDAO.actualizar(odontologo);
     }
-
 
     public Odontologo buscarOdontologoporID(Long id) {
 
@@ -60,6 +55,8 @@ public class OdontologoService {
           return odontologoIDAO.consultarTodos();
 
     }
+
+    //***********************************************************************************//
 
 
 }

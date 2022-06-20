@@ -1,7 +1,7 @@
 package com.dh.odontologica.model;
 
-import java.sql.Date;
 
+import java.util.Date;
 
 public class Paciente {
 
@@ -92,6 +92,8 @@ public class Paciente {
                 ", fechaDeIngreso='" + fechaDeIngreso + '\'' +
                 '}';
     }
+
+
 
 
     //*************************************Metodos****************************************//

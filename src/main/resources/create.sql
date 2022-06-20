@@ -23,12 +23,12 @@ create table if not exists odontologos (
     numeroMatricula varchar(255)
     );
 
-create table if not exists turnos (
-    id int auto_increment primary key,
-    nombre varchar(255),
-    apellido varchar(255),
-    numeroMatricula varchar(255)
-    );
+CREATE TABLE TURNOS(
+ID INT AUTO_INCREMENT PRIMARY KEY,
+date Date,
+IdOdontologo int, foreign key (IdOdontologo ) references Odontologos(id),
+idPaciente int, foreign key (IdPaciente ) references Pacientes(id)
+);
 
 
 
@@ -36,3 +36,5 @@ create table if not exists turnos (
 --INSERT INTO domicilios(calle, numero, localidad, provincia) VALUES('Test1', 1, 'Localidad Test1', 'Provincia Test1');
 --INSERT INTO pacientes(apellido, nombre, dni, fecha_ingreso, id_domicilio) VALUES('Apellido1', 'Nombre1', '101', '2022-05-31', 1);
 --INSERT INTO odontologos(nombre, apellido, numeroMatricula ) VALUES('Carlos', 'Perez', 'MO030622');
+
+--INSERT INTO TURNOS (date, IDODONTOLOGO, IdPaciente) VALUES ('2022-06-19', 29, 4)

@@ -8,10 +8,10 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.odontologica</groupId>
+	<groupId>com.storage</groupId>
 	<artifactId>spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>odontologica</name>
+	<name>storage</name>
 	<description>Proyecto springMVC</description>
 	<properties>
 		<java.version>18</java.version>

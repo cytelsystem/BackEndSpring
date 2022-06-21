@@ -1,4 +1,1 @@
-com\dh\storage\entity\Student.class
-com\dh\storage\repository\IStudentRepository.class
-com\dh\storage\StorageApplication.class
-com\dh\storage\service\StudentService.class
+com\dh\escuela\EscuelaApplication.class

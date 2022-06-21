@@ -2,7 +2,9 @@ package com.dh.finanzas.controller;
 
 
 import com.dh.finanzas.model.MovimientoDto;
+import com.dh.finanzas.model.UsuarioDto;
 import com.dh.finanzas.persistence.entities.Movimiento;
+import com.dh.finanzas.persistence.entities.Usuario;
 import com.dh.finanzas.service.EjemploService;
 import com.dh.finanzas.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +21,10 @@ public class UsuarioController {
     UsuarioService service;
 
     @PostMapping("/usuario/crear") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> crear(@RequestBody Movimiento m){
+    public ResponseEntity<String> crear(@RequestBody Usuario u){
         ResponseEntity<String> respuesta = null;
 
-        if(service.save(m) != null){
+        if(service.save(u) != null){
             respuesta = ResponseEntity.ok("El movimiento fue registrado con éxito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
@@ -32,7 +34,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/usuario/todos") //Ejemplo usando el Dto
-    public ResponseEntity<List<MovimientoDto>> consultarTodos(){
+    public ResponseEntity<List<UsuarioDto>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }
 }

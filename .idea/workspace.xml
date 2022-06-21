@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/model/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/model/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dh.finanzas.service" />
       <recent name="com.dh.storage.repository" />
       <recent name="com.dh.storage.service" />
       <recent name="com.dh.odontologica.model" />
@@ -89,6 +93,9 @@
       <recent name="com.dh.odontologica" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dh.finanzas.persistence.repository" />
+      <recent name="com.dh.finanzas.model" />
+      <recent name="com.dh.finanzas.controller" />
       <recent name="com.dh.odontologica.controller" />
       <recent name="com.dh.odontologica.persistence.dao.impl" />
     </key>

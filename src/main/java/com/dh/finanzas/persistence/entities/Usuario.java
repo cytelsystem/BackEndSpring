@@ -8,11 +8,10 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private int id;
 
     private String usuario;
     private String password;
-
 
     //**************************************contructores***********************************//
 
@@ -26,7 +25,7 @@ public class Usuario {
     }
 
     //**************************************Getter y setter*******************************************//
-    public Long getId() {
+    public int getId() {
         return id;
     }
 

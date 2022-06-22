@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UsuarioService {
@@ -20,6 +21,11 @@ public class UsuarioService {
     @Autowired
     private ModelMapper modelMapper;
 
+    public Optional<Usuario> buscarUsuarioporID(int id) {
+
+        return repository.findById(id);
+    }
+
     public String save(Usuario u){
         String result = null;
 
@@ -28,6 +34,10 @@ public class UsuarioService {
         }
 
         return result;
+    }
+
+    public void eliminar(int id){
+        repository.deleteById(id);
     }
 
     public List<UsuarioDto> obtenerTodos(){

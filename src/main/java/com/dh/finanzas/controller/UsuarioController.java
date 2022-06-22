@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/")
 public class UsuarioController {
 
     @Autowired
     UsuarioService service;
 
-    @PostMapping("/usuario/crear") //Ejemplo usando directamente la entidad
+    @PostMapping("CrearUsuario") //Ejemplo usando directamente la entidad
     public ResponseEntity<String> crear(@RequestBody Usuario u){
         ResponseEntity<String> respuesta = null;
 
@@ -33,7 +33,7 @@ public class UsuarioController {
         return respuesta;
     }
 
-    @GetMapping("/usuario/todos") //Ejemplo usando el Dto
+    @GetMapping("/ConsultarTodosUsuarios") //Ejemplo usando el Dto
     public ResponseEntity<List<UsuarioDto>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }

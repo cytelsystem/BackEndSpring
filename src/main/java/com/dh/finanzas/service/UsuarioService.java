@@ -49,4 +49,15 @@ public class UsuarioService {
 
         return usuarios;
     }
+
+
+    public String updateUsuario(Usuario u){
+        String result = null;
+
+        if(repository.save(u) != null){
+            result = "OK";
+        }
+
+        return result;
+    }
 }

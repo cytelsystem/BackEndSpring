@@ -23,11 +23,6 @@ public class UsuarioController {
     @Autowired
     UsuarioService service;
 
-    @GetMapping("/buscarPorIdUsuario/{id}")
-    public Optional<Usuario> getUsuarioById(@PathVariable int id){
-        return service.buscarUsuarioporID(id);
-    }
-
     @PostMapping("CrearUsuario") //Ejemplo usando directamente la entidad
     public ResponseEntity<String> crear(@RequestBody Usuario u){
         ResponseEntity<String> respuesta = null;
@@ -58,6 +53,26 @@ public class UsuarioController {
 
         return response;
 
+    }
+
+    @PutMapping("/actualizarUsuario")
+    public ResponseEntity<String> Actualizar(@RequestBody Usuario u){
+
+        ResponseEntity<String> respuesta = null;
+
+        if (service.updateUsuario(u) != null){
+            respuesta = ResponseEntity.ok("Registro actualizado con exito");
+        } else {
+            respuesta = ResponseEntity.internalServerError().body("No se actualizo el registro");
+        }
+
+
+        return respuesta;
+    }
+
+    @GetMapping("/buscarPorIdUsuario/{id}")
+    public Optional<Usuario> getUsuarioById(@PathVariable int id){
+        return service.buscarUsuarioporID(id);
     }
 
 

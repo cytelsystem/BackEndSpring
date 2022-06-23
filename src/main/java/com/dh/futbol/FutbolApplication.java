@@ -1,13 +1,13 @@
-package com.dh.finanzas;
+package com.dh.futbol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovimientosFinancierosApplication {
+public class FutbolApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MovimientosFinancierosApplication.class, args);
+        SpringApplication.run(FutbolApplication.class, args);
     }
 
 }

@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/controller/MovimientoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/controller/UsuarioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/model/MovimientoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/model/UsuarioDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/persistence/entities/Movimiento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/persistence/entities/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/persistence/repository/MovimientoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/persistence/repository/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/service/EjemploService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/service/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/MovimientosFinancierosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/FutbolApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/finanzas/configuration/MapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/configuration/MapperConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,12 +100,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="MovimientosFinancierosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dh.finanzas.MovimientosFinancierosApplication" />
+    <configuration name="FutbolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dh.futbol.FutbolApplication" />
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dh.finanzas.*" />
+          <option name="PATTERN" value="com.dh.futbol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MovimientosFinancierosApplication" />
+        <item itemvalue="Application.FutbolApplication" />
       </list>
     </recent_temporary>
   </component>

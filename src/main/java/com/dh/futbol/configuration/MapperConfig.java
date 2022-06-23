@@ -1,4 +1,4 @@
-package com.dh.finanzas.configuration;
+package com.dh.futbol.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

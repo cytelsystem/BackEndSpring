@@ -1,97 +1,24 @@
 {
 	"info": {
-		"_postman_id": "3f95cdd3-fc79-4972-b390-904d101dbe42",
-		"name": "ORM Usuario",
+		"_postman_id": "ae4aa1e6-0542-4ef2-bf7a-f66e29f56bcf",
+		"name": "ORM Equipos",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
 	},
 	"item": [
 		{
-			"name": "EliminarUsuarioPorID",
+			"name": "EliminarPorID",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/eliminarUsuario/2",
+					"raw": "localhost:8080/eliminar/4",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"eliminarUsuario",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "CrearUsuario",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"usuario\": \"Carlos\",\r\n    \"password\": \"asd1548\"\r\n   \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/CrearUsuario",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"CrearUsuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ActualizarUsuario",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "    {\r\n        \"id\": 1,\r\n        \"usuario\": \"Carlos\",\r\n        \"password\": \"asd1548\"\r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/actualizarUsuario",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"actualizarUsuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ConsultarUsuarioPorID",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/buscarPorIdUsuario/4",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"buscarPorIdUsuario",
+						"eliminar",
 						"4"
 					]
 				}
@@ -99,18 +26,91 @@
 			"response": []
 		},
 		{
-			"name": "ConsultarTodosUsuarios",
+			"name": "Crear",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Real madrid\",\r\n    \"ciudad\": \"Madrid\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:8080/ConsultarTodosUsuarios",
+					"raw": "localhost:8080/Crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"ConsultarTodosUsuarios"
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"usuario\": \"ivonne\",\r\n        \"password\": \"asd1548\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/actualizar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/buscarPorId/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buscarPorId",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ConsultarTodos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ConsultarTodos"
 					]
 				}
 			},

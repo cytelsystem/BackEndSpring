@@ -8,13 +8,13 @@ public class Equipo {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private int id;
     private String nombre;
     private String ciudad;
 
 
     //**************************************Getter y setter*******************************************//
-    public Long getId() {
+    public int getId() {
         return id;
     }
 

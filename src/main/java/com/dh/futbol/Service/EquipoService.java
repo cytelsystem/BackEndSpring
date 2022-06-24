@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class FutbolService {
+public class EquipoService {
 
 @Autowired
     private EquipoRepository repository;
@@ -21,9 +21,7 @@ public class FutbolService {
 private ModelMapper modelMapper;
 
 
-    public Optional<Equipo> buscarUsuarioporID(int id) {
-
-        repository.find
+    public Optional<Equipo> buscarEquipoID(int id) {
 
         return repository.findById(id);
     }
@@ -45,21 +43,12 @@ private ModelMapper modelMapper;
     public List<EquipoDTO> obtenerTodos(){
 
         List<EquipoDTO> equipos = new ArrayList<>();
-        for (EquipoDTO equipo : repository.findAll()) {
+        for (Equipo equipo : repository.findAll()) {
             equipos.add(modelMapper.map(equipo, EquipoDTO.class));
         }
 
         return equipos;
     }
-
-
-
-
-
-
-
-
-
 
 
 

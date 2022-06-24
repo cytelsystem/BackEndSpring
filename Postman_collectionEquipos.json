@@ -1,30 +1,11 @@
 {
 	"info": {
-		"_postman_id": "ae4aa1e6-0542-4ef2-bf7a-f66e29f56bcf",
+		"_postman_id": "a65758ef-0520-47b3-8e1c-7a68556f6d28",
 		"name": "ORM Equipos",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
 	},
 	"item": [
-		{
-			"name": "EliminarPorID",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/eliminar/4",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"eliminar",
-						"4"
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "Crear",
 			"request": {
@@ -40,13 +21,34 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/Crear",
+					"raw": "localhost:8080/equipos/Crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"equipos",
 						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarPorID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/equipos/eliminar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"equipos",
+						"eliminar",
+						"4"
 					]
 				}
 			},
@@ -67,12 +69,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/actualizar",
+					"raw": "localhost:8080/equipos/actualizar",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"equipos",
 						"actualizar"
 					]
 				}
@@ -85,12 +88,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/buscarPorId/5",
+					"raw": "localhost:8080/equipos/buscarPorId/5",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"equipos",
 						"buscarPorId",
 						"5"
 					]
@@ -104,12 +108,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/ConsultarTodos",
+					"raw": "localhost:8080/equipos/ConsultarTodos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"equipos",
 						"ConsultarTodos"
 					]
 				}

@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORM Usuario.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postman_collectionEquipos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Controller/EquipoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Controller/EquipoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Service/EquipoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Service/EquipoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/repository/EquipoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/repository/EquipoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -75,6 +80,9 @@
       <recent name="com.dh.storage.repository" />
       <recent name="com.dh.storage.service" />
       <recent name="com.dh.odontologica.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HECTORJM\Proyectos\java\Spring" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -92,11 +100,11 @@
       <recent name="com.dh.odontologica" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dh.futbol.Controller" />
+      <recent name="com.dh.futbol.persistence.repository" />
+      <recent name="com.dh.futbol.Service" />
       <recent name="com.dh.futbol.model" />
       <recent name="com.dh.finanzas.persistence.repository" />
-      <recent name="com.dh.finanzas.model" />
-      <recent name="com.dh.finanzas.controller" />
-      <recent name="com.dh.odontologica.controller" />
     </key>
   </component>
   <component name="RunManager">

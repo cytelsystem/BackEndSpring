@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table
+@Table(name="Jugador")
 public class Jugador {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

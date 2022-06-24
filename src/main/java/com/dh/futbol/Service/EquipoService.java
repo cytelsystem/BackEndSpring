@@ -6,7 +6,6 @@ import com.dh.futbol.persistence.repository.EquipoRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,13 +19,9 @@ public class EquipoService {
 @Autowired
 private ModelMapper modelMapper;
 
+    //*************************************Metodos**************************************//
 
-    public Optional<Equipo> buscarEquipoID(int id) {
-
-        return repository.findById(id);
-    }
-
-    public String save(Equipo e){
+    public String guardar(Equipo e){
         String result = null;
 
         if(repository.save(e) != null){
@@ -40,6 +35,11 @@ private ModelMapper modelMapper;
         repository.deleteById(id);
     }
 
+    public Optional<Equipo> buscarPorID(int id) {
+
+        return repository.findById(id);
+    }
+
     public List<EquipoDTO> obtenerTodos(){
 
         List<EquipoDTO> equipos = new ArrayList<>();
@@ -50,7 +50,6 @@ private ModelMapper modelMapper;
         return equipos;
     }
 
-
-
+    //********************************************************************************************//
 
 }

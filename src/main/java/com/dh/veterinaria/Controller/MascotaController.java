@@ -1,9 +1,9 @@
-package com.dh.futbol.Controller;
+package com.dh.veterinaria.Controller;
 
 
-import com.dh.futbol.Service.EquipoService;
-import com.dh.futbol.model.EquipoDTO;
-import com.dh.futbol.persistence.entity.Equipo;
+import com.dh.veterinaria.Service.MascotaService;
+import com.dh.veterinaria.model.MascotaDTO;
+import com.dh.veterinaria.persistence.entity.Mascota;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -14,18 +14,18 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/equipos")
-public class EquipoController {
+@RequestMapping("/jugadores")
+public class MascotaController {
 
     @Autowired
-    EquipoService service;
+    MascotaService service;
 
 
     @PostMapping("/Crear") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> crear(@RequestBody Equipo e){
+    public ResponseEntity<String> crear(@RequestBody Mascota j){
         ResponseEntity<String> respuesta = null;
 
-        if(service.guardar(e) != null){
+        if(service.guardar(j) != null){
             respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
@@ -55,10 +55,10 @@ public class EquipoController {
 
 
     @PostMapping("/actualizar") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> actualizar(@RequestBody Equipo e){
+    public ResponseEntity<String> actualizar(@RequestBody Mascota j){
         ResponseEntity<String> respuesta = null;
 
-        if(service.guardar(e) != null){
+        if(service.guardar(j) != null){
             respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
@@ -69,16 +69,15 @@ public class EquipoController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Equipo> buscarPorId(@PathVariable int id){
+    public Optional<Mascota> buscarPorId(@PathVariable int id){
         return service.buscarPorID(id);
     }
 
 
     @GetMapping("/ConsultarTodos") //Ejemplo usando el Dto
-    public ResponseEntity<List<EquipoDTO>> consultarTodos(){
+    public ResponseEntity<List<MascotaDTO>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }
-
 
 
 }

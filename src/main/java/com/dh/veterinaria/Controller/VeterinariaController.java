@@ -1,12 +1,9 @@
-package com.dh.futbol.Controller;
+package com.dh.veterinaria.Controller;
 
 
-import com.dh.futbol.Service.EquipoService;
-import com.dh.futbol.Service.JugadorService;
-import com.dh.futbol.model.EquipoDTO;
-import com.dh.futbol.model.JugadorDTO;
-import com.dh.futbol.persistence.entity.Equipo;
-import com.dh.futbol.persistence.entity.Jugador;
+import com.dh.veterinaria.Service.VeterinariaService;
+import com.dh.veterinaria.model.VeterinariaDTO;
+import com.dh.veterinaria.persistence.entity.Veterinaria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,18 +14,18 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/jugadores")
-public class JugadorController {
+@RequestMapping("/equipos")
+public class VeterinariaController {
 
     @Autowired
-    JugadorService service;
+    VeterinariaService service;
 
 
     @PostMapping("/Crear") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> crear(@RequestBody Jugador j){
+    public ResponseEntity<String> crear(@RequestBody Veterinaria e){
         ResponseEntity<String> respuesta = null;
 
-        if(service.guardar(j) != null){
+        if(service.guardar(e) != null){
             respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
@@ -58,10 +55,10 @@ public class JugadorController {
 
 
     @PostMapping("/actualizar") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> actualizar(@RequestBody Jugador j){
+    public ResponseEntity<String> actualizar(@RequestBody Veterinaria e){
         ResponseEntity<String> respuesta = null;
 
-        if(service.guardar(j) != null){
+        if(service.guardar(e) != null){
             respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
@@ -72,15 +69,16 @@ public class JugadorController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Jugador> buscarPorId(@PathVariable int id){
+    public Optional<Veterinaria> buscarPorId(@PathVariable int id){
         return service.buscarPorID(id);
     }
 
 
     @GetMapping("/ConsultarTodos") //Ejemplo usando el Dto
-    public ResponseEntity<List<JugadorDTO>> consultarTodos(){
+    public ResponseEntity<List<VeterinariaDTO>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }
+
 
 
 }

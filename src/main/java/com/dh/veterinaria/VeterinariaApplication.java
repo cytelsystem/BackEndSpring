@@ -1,13 +1,13 @@
-package com.dh.futbol;
+package com.dh.veterinaria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FutbolApplication {
+public class VeterinariaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FutbolApplication.class, args);
+        SpringApplication.run(VeterinariaApplication.class, args);
     }
 
 }

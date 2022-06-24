@@ -1,4 +1,4 @@
-package com.dh.futbol.configuration;
+package com.dh.veterinaria.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

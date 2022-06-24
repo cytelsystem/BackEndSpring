@@ -1,8 +1,8 @@
-package com.dh.futbol.Service;
+package com.dh.veterinaria.Service;
 
-import com.dh.futbol.model.EquipoDTO;
-import com.dh.futbol.persistence.entity.Equipo;
-import com.dh.futbol.persistence.repository.EquipoRepository;
+import com.dh.veterinaria.model.VeterinariaDTO;
+import com.dh.veterinaria.persistence.entity.Veterinaria;
+import com.dh.veterinaria.persistence.repository.VeterinariaRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,17 +11,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EquipoService {
+public class VeterinariaService {
 
 @Autowired
-    private EquipoRepository repository;
+    private VeterinariaRepository repository;
 
 @Autowired
 private ModelMapper modelMapper;
 
     //*************************************Metodos**************************************//
 
-    public String guardar(Equipo e){
+    public String guardar(Veterinaria e){
         String result = null;
 
         if(repository.save(e) != null){
@@ -35,16 +35,16 @@ private ModelMapper modelMapper;
         repository.deleteById(id);
     }
 
-    public Optional<Equipo> buscarPorID(int id) {
+    public Optional<Veterinaria> buscarPorID(int id) {
 
         return repository.findById(id);
     }
 
-    public List<EquipoDTO> obtenerTodos(){
+    public List<VeterinariaDTO> obtenerTodos(){
 
-        List<EquipoDTO> equipos = new ArrayList<>();
-        for (Equipo equipo : repository.findAll()) {
-            equipos.add(modelMapper.map(equipo, EquipoDTO.class));
+        List<VeterinariaDTO> equipos = new ArrayList<>();
+        for (Veterinaria equipo : repository.findAll()) {
+            equipos.add(modelMapper.map(equipo, VeterinariaDTO.class));
         }
 
         return equipos;

@@ -1,10 +1,7 @@
 package com.dh.escuela.Controller;
 
-import com.dh.escuela.Service.CursadaService;
 import com.dh.escuela.Service.MateriaService;
-import com.dh.escuela.model.CursadaDTO;
 import com.dh.escuela.model.MateriaDTO;
-import com.dh.escuela.persistence.entity.Cursada;
 import com.dh.escuela.persistence.entity.Materia;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

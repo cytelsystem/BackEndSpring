@@ -6,21 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postman_collectionEquipos.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postman_collectionCursada.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postman_collectionJugadores.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/MascotaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/VeterinariaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/MascotaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/VeterinariaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/VeterinariaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/escuela/EscuelaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/configuration/MapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/escuela/configuration/MapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/MascotaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/VeterinariaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Mascota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Veterinaria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/MascotaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/VeterinariaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/escuela/Controller/MateriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/escuela/Controller/MateriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/escuela/Service/MateriaService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,24 +153,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dh/escuela/persistence/dao/impl/OdontologoDAOH2.java</url>
           <line>76</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dh/escuela/Controller/MateriaController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dh/escuela/persistence/repository/MateriaRepository.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/dh/escuela/Controller/MateriaController.java</url>
-          <line>25</line>
-          <properties class="com.dh.escuela.Controller.MateriaController" method="crear">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

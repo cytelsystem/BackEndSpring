@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "a65758ef-0520-47b3-8e1c-7a68556f6d28",
-		"name": "ORM Equipos",
+		"name": "ORM Cursada",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
 	},
@@ -21,13 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/equipos/Crear",
+					"raw": "localhost:8080/cursada/Crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"cursada",
 						"Crear"
 					]
 				}
@@ -40,13 +40,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/eliminar/4",
+					"raw": "localhost:8080/cursada/eliminar/4",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"cursada",
 						"eliminar",
 						"4"
 					]
@@ -69,13 +69,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/equipos/actualizar",
+					"raw": "localhost:8080/cursada/actualizar",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"cursada",
 						"actualizar"
 					]
 				}
@@ -88,13 +88,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/buscarPorId/5",
+					"raw": "localhost:8080/cursada/buscarPorId/5",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"cursada",
 						"buscarPorId",
 						"5"
 					]
@@ -108,13 +108,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/ConsultarTodos",
+					"raw": "localhost:8080/cursada/ConsultarTodos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"cursada",
 						"ConsultarTodos"
 					]
 				}

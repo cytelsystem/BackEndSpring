@@ -1,13 +1,13 @@
-package com.dh.veterinaria;
+package com.dh.escuela;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VeterinariaApplication {
+public class EscuelaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(VeterinariaApplication.class, args);
+        SpringApplication.run(EscuelaApplication.class, args);
     }
 
 }

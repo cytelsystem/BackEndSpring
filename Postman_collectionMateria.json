@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "a65758ef-0520-47b3-8e1c-7a68556f6d28",
+		"name": "ORM Materia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12464718"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Real madrid\",\r\n    \"ciudad\": \"Madrid\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/materia/Crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"materia",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarPorID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/materia/eliminar/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"materia",
+						"eliminar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"usuario\": \"ivonne\",\r\n        \"password\": \"asd1548\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/materia/actualizar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"materia",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/materia/buscarPorId/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"materia",
+						"buscarPorId",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/materia/ConsultarTodos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"materia",
+						"ConsultarTodos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

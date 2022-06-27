@@ -1,9 +1,12 @@
 package com.dh.escuela.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
-@Table(name="Materia")
+@Table(name="materia")
 public class Materia {
 
 
@@ -13,6 +16,9 @@ public class Materia {
 
     private Long id;
     private String nombre;
+    @OneToMany(mappedBy = "materia")
+    @JsonIgnore
+    private Set<Cursada> cursadas;
 
 
 

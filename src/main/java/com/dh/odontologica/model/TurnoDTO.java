@@ -9,10 +9,7 @@ public class TurnoDTO {
 
     private Long id;
     private Date date;
-
-    @Autowired
     private PacienteDTO paciente;
-    @Autowired
     private OdontologoDTO odontologo;
 
     //***********************************Constructores***************************************//

@@ -1,5 +1,7 @@
 package com.dh.odontologica.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.sql.Date;
 import java.util.Objects;
 
@@ -7,23 +9,16 @@ public class TurnoDTO {
 
     private Long id;
     private Date date;
+
+    @Autowired
     private PacienteDTO paciente;
+    @Autowired
     private OdontologoDTO odontologo;
 
     //***********************************Constructores***************************************//
 
-    public TurnoDTO() {
 
-    }
-
-    public TurnoDTO(Long id, Date date, PacienteDTO paciente, OdontologoDTO odontologo) {
-        this.id = id;
-        this.date = date;
-        this.paciente = paciente;
-        this.odontologo = odontologo;
-    }
     //*********************************Getter y setter****************************************//
-
 
     public Long getId() {
         return id;
@@ -42,7 +37,6 @@ public class TurnoDTO {
     }
 
     public PacienteDTO getPaciente() {
-
         return paciente;
     }
 
@@ -51,7 +45,6 @@ public class TurnoDTO {
     }
 
     public OdontologoDTO getOdontologo() {
-
         return odontologo;
     }
 
@@ -59,30 +52,10 @@ public class TurnoDTO {
         this.odontologo = odontologo;
     }
 
+
 //**********************************toString y hashCode***********************************//
 
-    @Override
-    public String toString() {
-        return "Turno{" +
-                "id=" + id +
-                ", paciente=" + paciente +
-                ", odontologo=" + odontologo +
-                ", date=" + date +
-                '}';
-    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof TurnoDTO)) return false;
-        TurnoDTO turno = (TurnoDTO) o;
-        return Objects.equals(id, turno.id) && Objects.equals(paciente, turno.paciente) && Objects.equals(odontologo, turno.odontologo) && Objects.equals(date, turno.date);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, paciente, odontologo, date);
-    }
 
 
     //***************************************Metodos***************************************//

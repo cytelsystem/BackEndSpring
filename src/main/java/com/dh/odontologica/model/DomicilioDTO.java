@@ -11,17 +11,6 @@ public class DomicilioDTO {
 
     //**********************************Constructor*****************************************//
 
-    public DomicilioDTO() {
-    }
-
-
-    public DomicilioDTO(String calle, String numero, String localidad, String provincia) {
-        this.setCalle(calle);
-        this.setNumero(numero);
-        this.setLocalidad(localidad);
-        this.setProvincia(provincia);
-    }
-
     //**********************************Getter y Setter**********************************//
 
     public Long getId() {
@@ -64,18 +53,9 @@ public class DomicilioDTO {
         this.provincia = provincia;
     }
 
+
     //***************************************************************************************//
 
 
-    @Override
-    public String toString() {
-        return "Domicilio{" +
-                "id=" + id +
-                ", calle='" + calle + '\'' +
-                ", numero='" + numero + '\'' +
-                ", localidad='" + localidad + '\'' +
-                ", provincia='" + provincia + '\'' +
-                '}';
-    }
 }
 

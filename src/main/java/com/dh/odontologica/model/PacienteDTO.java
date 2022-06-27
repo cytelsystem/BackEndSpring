@@ -1,6 +1,8 @@
 package com.dh.odontologica.model;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Date;
 
 public class PacienteDTO {
@@ -10,26 +12,15 @@ public class PacienteDTO {
     private String apellido;
     private String email;
     private String dni;
+
+    @Autowired
     private Date fechaDeIngreso;
+    @Autowired
     private DomicilioDTO domicilio;
 
 
     //**************************************Constructores********************************************//
 
-
-    public PacienteDTO() {
-
-    }
-
-    public PacienteDTO(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, DomicilioDTO domicilio) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.dni = dni;
-        this.fechaDeIngreso = fechaDeIngreso;
-        this.domicilio = domicilio;
-    }
 
     //**************************************Getter y Setter****************************************//
 
@@ -89,20 +80,10 @@ public class PacienteDTO {
         this.domicilio = domicilio;
     }
 
+
     //*****************************************toString*****************************************//
 
-    @Override
-    public String toString() {
-        return "Paciente{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", email='" + email + '\'' +
-                ", dni='" + dni + '\'' +
-                ", fechaDeIngreso=" + fechaDeIngreso +
-                ", domicilio=" + domicilio +
-                '}';
-    }
+
 
 
     //*************************************Metodos****************************************//

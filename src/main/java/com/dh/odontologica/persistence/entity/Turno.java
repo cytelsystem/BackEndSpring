@@ -1,4 +1,4 @@
-package com.dh.odontologica.model;
+package com.dh.odontologica.persistence.entity;
 
 import java.sql.Date;
 import java.util.Objects;

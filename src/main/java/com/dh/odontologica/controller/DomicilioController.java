@@ -1,6 +1,6 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.model.Domicilio;
+import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.dao.impl.DomicilioDAOH2;
 import com.dh.odontologica.service.DomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class DomicilioController {
     DomicilioService domicilioService;
 
     @PostMapping("/CrearDomicilio")
-    public ResponseEntity<Domicilio> crearDomicilio(@RequestBody Domicilio domicilio){
+    public ResponseEntity<DomicilioDTO> crearDomicilio(@RequestBody DomicilioDTO domicilio){
         return ResponseEntity.ok(domicilioService.guardarDomicilioService(domicilio));
     }
 
@@ -41,8 +41,8 @@ public class DomicilioController {
     }
 
     @PutMapping("/actualizarDomicilio")
-    public ResponseEntity<Domicilio> actualizar(@RequestBody Domicilio domicilio) {
-        ResponseEntity<Domicilio> response = null;
+    public ResponseEntity<DomicilioDTO> actualizar(@RequestBody DomicilioDTO domicilio) {
+        ResponseEntity<DomicilioDTO> response = null;
 
         if (domicilio.getId() != null && domicilioService.buscarDomicilioPorId(domicilio.getId()) != null)
             response = ResponseEntity.ok(domicilioService.actualizar(domicilio));
@@ -53,15 +53,15 @@ public class DomicilioController {
     }
 
     @GetMapping("/buscarPorIdDomicilio/{id}")
-    public ResponseEntity<Domicilio> buscar(@PathVariable Long id) {
-        Domicilio odontologo = domicilioService.buscarDomicilioPorId(id);
+    public ResponseEntity<DomicilioDTO> buscar(@PathVariable Long id) {
+        DomicilioDTO odontologo = domicilioService.buscarDomicilioPorId(id);
 
         return ResponseEntity.ok(odontologo);
     }
 
 
     @RequestMapping("/ConsultarTodosDomicilio")
-    public ResponseEntity<List<Domicilio>> getTodosDomicilio(){
+    public ResponseEntity<List<DomicilioDTO>> getTodosDomicilio(){
         return ResponseEntity.ok(domicilioService.listarTodosDomicilio());
     }
 

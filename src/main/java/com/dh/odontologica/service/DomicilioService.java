@@ -1,35 +1,34 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.persistence.dao.Dao;
-import com.dh.odontologica.model.Domicilio;
+import com.dh.odontologica.model.DomicilioDTO;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class DomicilioService {
 
-    private Dao<Domicilio> domicilioIdao;
+    private Dao<DomicilioDTO> domicilioIdao;
 
     //***************************Constructor*************************************//
 
-    public DomicilioService(Dao<Domicilio> domicilioIdao) {
+    public DomicilioService(Dao<DomicilioDTO> domicilioIdao) {
         this.domicilioIdao = domicilioIdao;
     }
 
     //****************************Getter y Setter***********************************//
 
-    public Dao<Domicilio> getDomicilioIdao() {
+    public Dao<DomicilioDTO> getDomicilioIdao() {
         return domicilioIdao;
     }
 
-    public void setDomicilioIdao(Dao<Domicilio> domicilioIdao) {
+    public void setDomicilioIdao(Dao<DomicilioDTO> domicilioIdao) {
         this.domicilioIdao = domicilioIdao;
     }
 
 
     //******************************Metodos*******************************//
 
-    public Domicilio guardarDomicilioService(Domicilio d) {
+    public DomicilioDTO guardarDomicilioService(DomicilioDTO d) {
 
         return domicilioIdao.crear(d);
 
@@ -41,18 +40,18 @@ public class DomicilioService {
 
     }
 
-    public Domicilio actualizar(Domicilio domicilio){
+    public DomicilioDTO actualizar(DomicilioDTO domicilio){
 
         return domicilioIdao.actualizar(domicilio);
 
     }
 
-    public Domicilio buscarDomicilioPorId(Long id){
+    public DomicilioDTO buscarDomicilioPorId(Long id){
 
         return domicilioIdao.consultarPorId(id);
     }
 
-    public List<Domicilio> listarTodosDomicilio(){
+    public List<DomicilioDTO> listarTodosDomicilio(){
 
         return domicilioIdao.consultarTodos();
 

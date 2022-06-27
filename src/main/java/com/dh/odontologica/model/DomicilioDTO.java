@@ -1,6 +1,6 @@
 package com.dh.odontologica.model;
 
-public class Domicilio {
+public class DomicilioDTO {
 
 
     private Long id;
@@ -11,11 +11,11 @@ public class Domicilio {
 
     //**********************************Constructor*****************************************//
 
-    public Domicilio() {
+    public DomicilioDTO() {
     }
 
 
-    public Domicilio(String calle, String numero, String localidad, String provincia) {
+    public DomicilioDTO(String calle, String numero, String localidad, String provincia) {
         this.setCalle(calle);
         this.setNumero(numero);
         this.setLocalidad(localidad);

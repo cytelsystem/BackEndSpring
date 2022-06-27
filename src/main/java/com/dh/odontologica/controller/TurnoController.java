@@ -1,8 +1,8 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.model.Odontologo;
-import com.dh.odontologica.model.Paciente;
-import com.dh.odontologica.model.Turno;
+import com.dh.odontologica.model.OdontologoDTO;
+import com.dh.odontologica.model.PacienteDTO;
+import com.dh.odontologica.model.TurnoDTO;
 import com.dh.odontologica.service.OdontologoService;
 import com.dh.odontologica.service.PacienteService;
 import com.dh.odontologica.service.TurnoService;
@@ -27,12 +27,12 @@ public class TurnoController {
 
 
     @PostMapping("/CrearTurno")
-    public ResponseEntity<Turno> crearTurno(@RequestBody Turno turno){
+    public ResponseEntity<TurnoDTO> crearTurno(@RequestBody TurnoDTO turno){
 
-        ResponseEntity<Turno> respuesta;
+        ResponseEntity<TurnoDTO> respuesta;
 
-        Paciente p = pacienteService.buscarPacienteID(turno.getPaciente().getId());
-        Odontologo o = odontologoService.buscarOdontologoporID(turno.getOdontologo().getId());
+        PacienteDTO p = pacienteService.buscarPacienteID(turno.getPaciente().getId());
+        OdontologoDTO o = odontologoService.buscarOdontologoporID(turno.getOdontologo().getId());
 
         if(p != null && o != null){
             turnoService.CrearTurno(turno);
@@ -66,8 +66,8 @@ public class TurnoController {
     }
 
     @PutMapping("/actualizarTurno")
-    public ResponseEntity<Turno> actualizar(@RequestBody Turno turno) {
-        ResponseEntity<Turno> response = null;
+    public ResponseEntity<TurnoDTO> actualizar(@RequestBody TurnoDTO turno) {
+        ResponseEntity<TurnoDTO> response = null;
 
         if (turno.getId() != null && turnoService.buscarTurnoID(turno.getId()) != null)
             response = ResponseEntity.ok(turnoService.actualizarTurno(turno));
@@ -78,14 +78,14 @@ public class TurnoController {
     }
 
     @GetMapping("/buscarPorIdTurno/{id}")
-    public ResponseEntity<Turno> buscar(@PathVariable Long id) {
-        Turno turno = turnoService.buscarTurnoID(id);
+    public ResponseEntity<TurnoDTO> buscar(@PathVariable Long id) {
+        TurnoDTO turno = turnoService.buscarTurnoID(id);
 
         return ResponseEntity.ok(turno);
     }
 
     @RequestMapping("/ConsultarTodosTurnos")
-    public ResponseEntity<List<Turno>> getTodosTurnos(){
+    public ResponseEntity<List<TurnoDTO>> getTodosTurnos(){
         return ResponseEntity.ok(turnoService.listarTodosTurnos());
     }
 

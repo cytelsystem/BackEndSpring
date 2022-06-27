@@ -1,7 +1,7 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.model.Domicilio;
-import com.dh.odontologica.model.Paciente;
+import com.dh.odontologica.model.DomicilioDTO;
+import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.service.DomicilioService;
 import com.dh.odontologica.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +22,11 @@ public class PacienteController {
 
 
     @PostMapping("/CrearPaciente")
-    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
+    public ResponseEntity<PacienteDTO> crearPaciente(@RequestBody PacienteDTO paciente){
 
-        ResponseEntity<Paciente> respuesta;
+        ResponseEntity<PacienteDTO> respuesta;
 
-        Domicilio d = domicilioService.buscarDomicilioPorId(paciente.getDomicilio().getId());
+        DomicilioDTO d = domicilioService.buscarDomicilioPorId(paciente.getDomicilio().getId());
 
         System.out.println(d);
 
@@ -61,8 +61,8 @@ public class PacienteController {
     }
 
     @PutMapping("/actualizarPaciente")
-    public ResponseEntity<Paciente> actualizar(@RequestBody Paciente paciente) {
-        ResponseEntity<Paciente> response = null;
+    public ResponseEntity<PacienteDTO> actualizar(@RequestBody PacienteDTO paciente) {
+        ResponseEntity<PacienteDTO> response = null;
 
         if (paciente.getId() != null && pacienteService.buscarPacienteID(paciente.getId()) != null)
             response = ResponseEntity.ok(pacienteService.actualizar(paciente));
@@ -73,14 +73,14 @@ public class PacienteController {
     }
 
     @GetMapping("/buscarPorIdPaciente/{id}")
-    public ResponseEntity<Paciente> buscar(@PathVariable Long id) {
-        Paciente paciente = pacienteService.buscarPacienteID(id);
+    public ResponseEntity<PacienteDTO> buscar(@PathVariable Long id) {
+        PacienteDTO paciente = pacienteService.buscarPacienteID(id);
 
         return ResponseEntity.ok(paciente);
     }
 
     @RequestMapping("/ConsultarTodosPacientes")
-    public ResponseEntity<List<Paciente>> getTodosPacientes(){
+    public ResponseEntity<List<PacienteDTO>> getTodosPacientes(){
         return ResponseEntity.ok(pacienteService.listarTodosPacientes());
     }
 

@@ -3,7 +3,7 @@ package com.dh.odontologica.model;
 
 import java.util.Date;
 
-public class Paciente {
+public class PacienteDTO {
 
     private Long id;
     private String nombre;
@@ -11,17 +11,17 @@ public class Paciente {
     private String email;
     private String dni;
     private Date fechaDeIngreso;
-    private Domicilio domicilio;
+    private DomicilioDTO domicilio;
 
 
     //**************************************Constructores********************************************//
 
 
-    public Paciente() {
+    public PacienteDTO() {
 
     }
 
-    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio) {
+    public PacienteDTO(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, DomicilioDTO domicilio) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -81,11 +81,11 @@ public class Paciente {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 
-    public Domicilio getDomicilio() {
+    public DomicilioDTO getDomicilio() {
         return domicilio;
     }
 
-    public void setDomicilio(Domicilio domicilio) {
+    public void setDomicilio(DomicilioDTO domicilio) {
         this.domicilio = domicilio;
     }
 

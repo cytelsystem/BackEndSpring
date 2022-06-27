@@ -1,36 +1,35 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.model.Odontologo;
-import com.dh.odontologica.persistence.dao.Dao;
+import com.dh.odontologica.model.OdontologoDTO;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class OdontologoService {
 
-    private Dao<Odontologo> odontologoIDAO;
+    private Dao<OdontologoDTO> odontologoIDAO;
 
     //******************************Constructor***************************************//
 
-    public OdontologoService(Dao<Odontologo> odontologoIDAO) {
+    public OdontologoService(Dao<OdontologoDTO> odontologoIDAO) {
 
         this.odontologoIDAO = odontologoIDAO;
     }
 
     //******************************Getter y setter***************************************//
-    public Dao<Odontologo> getOdontologoIDAO() {
+    public Dao<OdontologoDTO> getOdontologoIDAO() {
 
         return odontologoIDAO;
     }
 
-    public void setOdontologoIDAO(Dao<Odontologo> odontologoIDAO) {
+    public void setOdontologoIDAO(Dao<OdontologoDTO> odontologoIDAO) {
 
         this.odontologoIDAO = odontologoIDAO;
     }
 
     //*****************************Metodos************************************************//
 
-    public Odontologo guardaOdontologoService(Odontologo o) {
+    public OdontologoDTO guardaOdontologoService(OdontologoDTO o) {
 
         return odontologoIDAO.crear(o);
     }
@@ -40,17 +39,17 @@ public class OdontologoService {
         odontologoIDAO.eliminar(id);
     }
 
-    public Odontologo actualizar(Odontologo odontologo) {
+    public OdontologoDTO actualizar(OdontologoDTO odontologo) {
 
         return odontologoIDAO.actualizar(odontologo);
     }
 
-    public Odontologo buscarOdontologoporID(Long id) {
+    public OdontologoDTO buscarOdontologoporID(Long id) {
 
         return odontologoIDAO.consultarPorId(id);
     }
 
-    public List<Odontologo> listarTodosOdontologos() {
+    public List<OdontologoDTO> listarTodosOdontologos() {
 
           return odontologoIDAO.consultarTodos();
 

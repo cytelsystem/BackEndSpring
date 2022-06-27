@@ -1,7 +1,6 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.model.Turno;
-import com.dh.odontologica.persistence.dao.Dao;
+import com.dh.odontologica.model.TurnoDTO;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -9,27 +8,27 @@ import java.util.List;
 @Service
 public class TurnoService {
 
-    private Dao<Turno> turnoDao;
+    private Dao<TurnoDTO> turnoDao;
 
     //***********************************Constructor******************************************//
 
-    public TurnoService(Dao<Turno> turnoDao) {
+    public TurnoService(Dao<TurnoDTO> turnoDao) {
         this.turnoDao = turnoDao;
     }
 
     //***********************************Getter y Setter********************************************//
 
-    public Dao<Turno> getTurnoDao() {
+    public Dao<TurnoDTO> getTurnoDao() {
         return turnoDao;
     }
 
-    public void setTurnoDao(Dao<Turno> turnoDao) {
+    public void setTurnoDao(Dao<TurnoDTO> turnoDao) {
         this.turnoDao = turnoDao;
     }
 
     //************************************Metodos**********************************************//
 
-    public Turno CrearTurno(Turno turno){
+    public TurnoDTO CrearTurno(TurnoDTO turno){
 
         return turnoDao.crear(turno);
 
@@ -39,15 +38,15 @@ public class TurnoService {
         turnoDao.eliminar(id);
     }
 
-    public Turno actualizarTurno(Turno turno){
+    public TurnoDTO actualizarTurno(TurnoDTO turno){
         return turnoDao.actualizar(turno);
     }
 
-    public Turno buscarTurnoID(Long id){
+    public TurnoDTO buscarTurnoID(Long id){
         return turnoDao.consultarPorId(id);
     }
 
-    public List<Turno> listarTodosTurnos(){
+    public List<TurnoDTO> listarTodosTurnos(){
         return turnoDao.consultarTodos();
 
     }

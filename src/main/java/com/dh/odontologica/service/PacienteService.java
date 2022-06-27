@@ -1,7 +1,6 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.persistence.dao.Dao;
-import com.dh.odontologica.model.Paciente;
+import com.dh.odontologica.model.PacienteDTO;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -9,27 +8,27 @@ import java.util.List;
 @Service
 public class PacienteService {
 
-    private Dao<Paciente> pacienteIDAO;
+    private Dao<PacienteDTO> pacienteIDAO;
 
     //******************************Constructores***************************************//
 
-    public PacienteService(Dao<Paciente> pacienteIDAO) {
+    public PacienteService(Dao<PacienteDTO> pacienteIDAO) {
         this.pacienteIDAO = pacienteIDAO;
     }
 
     //******************************Getter y setter***************************************//
 
-    public Dao<Paciente> getPacienteIDAO() {
+    public Dao<PacienteDTO> getPacienteIDAO() {
         return pacienteIDAO;
     }
 
-    public void setPacienteIDAO(Dao<Paciente> pacienteIDAO) {
+    public void setPacienteIDAO(Dao<PacienteDTO> pacienteIDAO) {
         this.pacienteIDAO = pacienteIDAO;
     }
 
     //*****************************Metodos************************************************//
 
-    public Paciente guardaPacienteService(Paciente o) {
+    public PacienteDTO guardaPacienteService(PacienteDTO o) {
         return pacienteIDAO.crear(o);
     }
 
@@ -38,17 +37,17 @@ public class PacienteService {
         pacienteIDAO.eliminar(id);
     }
 
-    public Paciente actualizar(Paciente paciente) {
+    public PacienteDTO actualizar(PacienteDTO paciente) {
 
         return pacienteIDAO.actualizar(paciente);
     }
 
-    public Paciente buscarPacienteID(Long id) {
+    public PacienteDTO buscarPacienteID(Long id) {
 
         return pacienteIDAO.consultarPorId(id);
     }
 
-    public List<Paciente> listarTodosPacientes() {
+    public List<PacienteDTO> listarTodosPacientes() {
 
         return pacienteIDAO.consultarTodos();
 

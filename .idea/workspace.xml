@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="" />
+    <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/DomicilioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/OdontologoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/PacienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/TurnoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/DomicilioDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/OdontologoDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/PacienteDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/impl/TurnoDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/util/ConfiguracionJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/dao/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +40,7 @@
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,11 +58,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -55,10 +84,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dh.odontologica.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\entity" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

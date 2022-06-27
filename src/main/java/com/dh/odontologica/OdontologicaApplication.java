@@ -1,8 +1,6 @@
 package com.dh.odontologica;
 
-import com.dh.odontologica.model.Odontologo;
 import com.dh.odontologica.persistence.dao.impl.OdontologoDAOH2;
-import com.dh.odontologica.service.OdontologoService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

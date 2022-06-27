@@ -1,6 +1,6 @@
 package com.dh.odontologica.model;
 
-public class Odontologo {
+public class OdontologoDTO {
     private Long id;
     private String nombre;
     private String apellido;
@@ -8,11 +8,11 @@ public class Odontologo {
 
     //*****************************Constructores***********************************//
 
-    public Odontologo() {
+    public OdontologoDTO() {
 
     }
 
-    public Odontologo(Long id, String nombre, String apellido, String matricula) {
+    public OdontologoDTO(Long id, String nombre, String apellido, String matricula) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;

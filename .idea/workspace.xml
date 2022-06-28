@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/TurnoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/TurnoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

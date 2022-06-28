@@ -6,18 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Controller/EquipoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/VeterinariaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Controller/JugadorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/MascotaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/FutbolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/VeterinariaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Service/EquipoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/VeterinariaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/Service/JugadorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/MascotaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/configuration/MapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/configuration/MapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/model/EquipoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/VeterinariaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/model/JugadorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/MascotaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Veterinaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/entity/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Mascota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/repository/EquipoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/VeterinariaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/futbol/persistence/repository/JugadorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/MascotaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postman_collectionEquipos.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postman_collectionMascotas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postman_collectionJugadores.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postman_collectionVeterinaria.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/MascotaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/MascotaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/VeterinariaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Controller/VeterinariaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/MascotaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/MascotaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/VeterinariaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/Service/VeterinariaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/MascotaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/MascotaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/VeterinariaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/model/VeterinariaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Mascota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Mascota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Veterinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/entity/Veterinaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/MascotaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/MascotaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/VeterinariaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/veterinaria/persistence/repository/VeterinariaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

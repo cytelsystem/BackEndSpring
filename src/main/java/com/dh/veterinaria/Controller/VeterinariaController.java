@@ -14,14 +14,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/equipos")
+@RequestMapping("/veterinaria")
 public class VeterinariaController {
 
     @Autowired
     VeterinariaService service;
 
 
-    @PostMapping("/Crear") //Ejemplo usando directamente la entidad
+    @PostMapping("/Crear")
     public ResponseEntity<String> crear(@RequestBody Veterinaria e){
         ResponseEntity<String> respuesta = null;
 
@@ -34,14 +34,15 @@ public class VeterinariaController {
         return respuesta;
     }
 
+
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable int id) {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) {
 
         HttpHeaders responseHeaders = new HttpHeaders();
 
         ResponseEntity<String> response = null;
 
-        if (service.buscarPorID(id) != null) {
+        if (service.buscarPorId(id) != null) {
 
             service.eliminar(id);
             response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
@@ -69,12 +70,12 @@ public class VeterinariaController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Veterinaria> buscarPorId(@PathVariable int id){
-        return service.buscarPorID(id);
+    public Optional<Veterinaria> buscarPorId(@PathVariable Long id){
+        return service.buscarPorId(id);
     }
 
 
-    @GetMapping("/ConsultarTodos") //Ejemplo usando el Dto
+    @GetMapping("/ConsultarTodos")
     public ResponseEntity<List<VeterinariaDTO>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }

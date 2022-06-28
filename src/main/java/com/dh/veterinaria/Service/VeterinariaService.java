@@ -31,23 +31,23 @@ private ModelMapper modelMapper;
         return result;
     }
 
-    public void eliminar(int id){
+    public void eliminar(Long id){
         repository.deleteById(id);
     }
 
-    public Optional<Veterinaria> buscarPorID(int id) {
+    public Optional<Veterinaria> buscarPorId(Long id) {
 
         return repository.findById(id);
     }
 
     public List<VeterinariaDTO> obtenerTodos(){
 
-        List<VeterinariaDTO> equipos = new ArrayList<>();
-        for (Veterinaria equipo : repository.findAll()) {
-            equipos.add(modelMapper.map(equipo, VeterinariaDTO.class));
+        List<VeterinariaDTO> veterinaria = new ArrayList<>();
+        for (Veterinaria vet : repository.findAll()) {
+            veterinaria.add(modelMapper.map(vet, VeterinariaDTO.class));
         }
 
-        return equipos;
+        return veterinaria;
     }
 
     //********************************************************************************************//

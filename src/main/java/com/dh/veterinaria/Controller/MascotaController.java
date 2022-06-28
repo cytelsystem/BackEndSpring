@@ -2,8 +2,10 @@ package com.dh.veterinaria.Controller;
 
 
 import com.dh.veterinaria.Service.MascotaService;
+import com.dh.veterinaria.Service.VeterinariaService;
 import com.dh.veterinaria.model.MascotaDTO;
 import com.dh.veterinaria.persistence.entity.Mascota;
+import com.dh.veterinaria.persistence.entity.Veterinaria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -14,34 +16,50 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/jugadores")
+@RequestMapping("/mascotas")
 public class MascotaController {
 
     @Autowired
     MascotaService service;
 
+    @Autowired
+    VeterinariaService veterinariaService;
 
-    @PostMapping("/Crear") //Ejemplo usando directamente la entidad
-    public ResponseEntity<String> crear(@RequestBody Mascota j){
-        ResponseEntity<String> respuesta = null;
 
-        if(service.guardar(j) != null){
-            respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
+    @PostMapping("/Crear")
+    public ResponseEntity<Mascota> crear(@RequestBody Mascota j){
+
+        ResponseEntity<Mascota> respuesta;
+
+        System.out.println(j);
+
+        Optional<Veterinaria> v = veterinariaService.buscarPorId(j.getVeterinaria().getId());
+
+        System.out.println(v);
+
+
+        if(v != null){
+            service.guardar(j);
+            respuesta = ResponseEntity.ok(j);
         }else{
-            respuesta = ResponseEntity.internalServerError().body("Ooops");
+            respuesta = ResponseEntity.badRequest().body(null);
         }
 
         return respuesta;
+
+
+
+
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable int id) {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) {
 
         HttpHeaders responseHeaders = new HttpHeaders();
 
         ResponseEntity<String> response = null;
 
-        if (service.buscarPorID(id) != null) {
+        if (service.buscarPorId(id) != null) {
 
             service.eliminar(id);
             response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
@@ -54,7 +72,7 @@ public class MascotaController {
     }
 
 
-    @PostMapping("/actualizar") //Ejemplo usando directamente la entidad
+    @PostMapping("/actualizar")
     public ResponseEntity<String> actualizar(@RequestBody Mascota j){
         ResponseEntity<String> respuesta = null;
 
@@ -69,12 +87,12 @@ public class MascotaController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Mascota> buscarPorId(@PathVariable int id){
-        return service.buscarPorID(id);
+    public Optional<Mascota> buscarPorId(@PathVariable Long id){
+        return service.buscarPorId(id);
     }
 
 
-    @GetMapping("/ConsultarTodos") //Ejemplo usando el Dto
+    @GetMapping("/ConsultarTodos")
     public ResponseEntity<List<MascotaDTO>> consultarTodos(){
         return ResponseEntity.ok(service.obtenerTodos());
     }

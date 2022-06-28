@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "a65758ef-0520-47b3-8e1c-7a68556f6d28",
-		"name": "ORM Equipos",
+		"_postman_id": "4c36dd3f-bf88-42cc-92aa-3d76cb0c2d8e",
+		"name": "ORM Veterinaria",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
 	},
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Real madrid\",\r\n    \"ciudad\": \"Madrid\"\r\n   \r\n}",
+					"raw": "{\r\n    \"nombre\": \"carlos\",\r\n    \"puesto\": \"delantero\",\r\n    \"numero\": 10\r\n   \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,13 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/equipos/Crear",
+					"raw": "localhost:8080/veterinaria/Crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"veterinaria",
 						"Crear"
 					]
 				}
@@ -40,13 +40,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/eliminar/4",
+					"raw": "localhost:8080/veterinaria/eliminar/4",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"veterinaria",
 						"eliminar",
 						"4"
 					]
@@ -61,7 +61,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "    {\r\n        \"id\": 1,\r\n        \"usuario\": \"ivonne\",\r\n        \"password\": \"asd1548\"\r\n    }",
+					"raw": "{\r\n    \"nombre\": \"carlos\",\r\n    \"puesto\": \"delantero\",\r\n    \"numero\": 10\r\n   \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -69,13 +69,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/equipos/actualizar",
+					"raw": "localhost:8080/veterinaria/actualizar",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"veterinaria",
 						"actualizar"
 					]
 				}
@@ -88,13 +88,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/buscarPorId/5",
+					"raw": "localhost:8080/veterinaria/buscarPorId/5",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"veterinaria",
 						"buscarPorId",
 						"5"
 					]
@@ -108,13 +108,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/equipos/ConsultarTodos",
+					"raw": "localhost:8080/veterinaria/ConsultarTodos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"equipos",
+						"veterinaria",
 						"ConsultarTodos"
 					]
 				}

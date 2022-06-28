@@ -1,10 +1,13 @@
 package com.dh.veterinaria.model;
 
+import com.dh.veterinaria.persistence.entity.Veterinaria;
+
 public class MascotaDTO {
 
-    private int id;
+    private Long id;
     private String nombre;
     private String tipo;
+    private Veterinaria veterinariaId;
 
 
     //*************************************Contructores****************************************//
@@ -12,11 +15,11 @@ public class MascotaDTO {
 
     //*************************************Getter y Setter*********************************************//
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -36,8 +39,28 @@ public class MascotaDTO {
         this.tipo = tipo;
     }
 
+    public Veterinaria getVeterinariaId() {
+        return veterinariaId;
+    }
+
+    public void setVeterinariaId(Veterinaria veterinariaId) {
+        this.veterinariaId = veterinariaId;
+    }
+
 
     //**************************************Metodos*********************************************//
+
+    @Override
+    public String toString() {
+        return "MascotaDTO{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", veterinariaId=" + veterinariaId +
+                '}';
+    }
+
+
     //************************************************************************************************//
 
 }

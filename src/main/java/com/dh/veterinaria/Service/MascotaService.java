@@ -24,34 +24,34 @@ public class MascotaService {
     //*******************************Metodos*************************************//
 
 
-    public String guardar(Mascota j){
+    public String guardar(Mascota m){
         String result = null;
 
-        if(repository.save(j) != null){
+        if(repository.save(m) != null){
             result = "OK";
         }
 
         return result;
     }
 
-    public void eliminar(int id){
+    public void eliminar(Long id){
         repository.deleteById(id);
     }
 
 
-    public Optional<Mascota> buscarPorID(int id) {
+    public Optional<Mascota> buscarPorId(Long id) {
 
         return repository.findById(id);
     }
 
     public List<MascotaDTO> obtenerTodos(){
 
-        List<MascotaDTO> jugadores = new ArrayList<>();
-        for (Mascota jugador : repository.findAll()) {
-            jugadores.add(modelMapper.map(jugador, MascotaDTO.class));
+        List<MascotaDTO> mascotas = new ArrayList<>();
+        for (Mascota mascota : repository.findAll()) {
+            mascotas.add(modelMapper.map(mascota, MascotaDTO.class));
         }
 
-        return jugadores;
+        return mascotas;
     }
 
 

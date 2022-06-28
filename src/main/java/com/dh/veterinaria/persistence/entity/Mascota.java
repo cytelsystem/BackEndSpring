@@ -7,15 +7,20 @@ import javax.persistence.*;
 @Table(name="Mascota")
 public class Mascota {
 
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mascotaSequense")
+    @SequenceGenerator(name = "mascotaSequense", sequenceName = "mascotaSequense", allocationSize = 1)
+    @Column(name = "Id_Mascota", nullable = false)
 
     private Long id;
-    @Column
     private String nombre;
-    @Column
     private String tipo;
+
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "veterinariaID")
+    private Veterinaria veterinaria;
 
 
 
@@ -23,13 +28,7 @@ public class Mascota {
     //*********************************Constructores*************************************//
 
 
-    public Mascota() {
-    }
 
-    public Mascota(String nombre, String tipo) {
-        this.nombre = nombre;
-        this.tipo = tipo;
-    }
 
     //**********************************Getter y setter*****************************************//
 
@@ -51,6 +50,14 @@ public class Mascota {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public Veterinaria getVeterinaria() {
+        return veterinaria;
+    }
+
+    public void setVeterinaria(Veterinaria veterinaria) {
+        this.veterinaria = veterinaria;
     }
 
 

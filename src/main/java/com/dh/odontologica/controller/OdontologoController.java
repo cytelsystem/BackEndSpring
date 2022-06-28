@@ -11,17 +11,18 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/odontologos")
 public class OdontologoController {
 
     @Autowired
-    OdontologoService odontologoService;
+    OdontologoService service;
 
-    @PostMapping("/CrearOdontologo")
+    @PostMapping("/Crear")
     public ResponseEntity<OdontologoDTO> crearOdontologo(@RequestBody OdontologoDTO odontologo){
         return ResponseEntity.ok(odontologoService.guardaOdontologoService(odontologo));
     }
 
-    @DeleteMapping("/eliminarOdontologo/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminarOdontologo(@PathVariable Long id) {
         HttpHeaders responseHeaders = new HttpHeaders();
 
@@ -39,7 +40,7 @@ public class OdontologoController {
 
     }
 
-    @PutMapping("/actualizarOdontologo")
+    @PutMapping("/actualizar")
     public ResponseEntity<OdontologoDTO> actualizar(@RequestBody OdontologoDTO odontologo) {
         ResponseEntity<OdontologoDTO> response = null;
 
@@ -51,14 +52,14 @@ public class OdontologoController {
         return response;
     }
 
-    @GetMapping("/buscarPorIdOdontologo/{id}")
+    @GetMapping("/buscarPorId/{id}")
     public ResponseEntity<OdontologoDTO> buscar(@PathVariable Long id) {
         OdontologoDTO odontologo = odontologoService.buscarOdontologoporID(id);
 
         return ResponseEntity.ok(odontologo);
     }
 
-    @RequestMapping("/ConsultarTodosOdontologos")
+    @RequestMapping("/ConsultarTodos")
     public ResponseEntity<List<OdontologoDTO>> getTodosOdontologos(){
         return ResponseEntity.ok(odontologoService.listarTodosOdontologos());
     }

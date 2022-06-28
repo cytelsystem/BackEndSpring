@@ -15,18 +15,19 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/turnos")
 public class TurnoController {
 
 
     @Autowired
-    private TurnoService turnoService;
+    private TurnoService service;
     @Autowired
     private PacienteService pacienteService;
     @Autowired
     private OdontologoService odontologoService;
 
 
-    @PostMapping("/CrearTurno")
+    @PostMapping("/Crear")
     public ResponseEntity<TurnoDTO> crearTurno(@RequestBody TurnoDTO turno){
 
         ResponseEntity<TurnoDTO> respuesta;
@@ -46,7 +47,7 @@ public class TurnoController {
         return respuesta;
     }
 
-    @DeleteMapping("/eliminarTurno/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminarTurno(@PathVariable Long id) {
         HttpHeaders responseHeaders = new HttpHeaders();
 
@@ -65,7 +66,7 @@ public class TurnoController {
 
     }
 
-    @PutMapping("/actualizarTurno")
+    @PutMapping("/actualizar")
     public ResponseEntity<TurnoDTO> actualizar(@RequestBody TurnoDTO turno) {
         ResponseEntity<TurnoDTO> response = null;
 
@@ -77,14 +78,14 @@ public class TurnoController {
         return response;
     }
 
-    @GetMapping("/buscarPorIdTurno/{id}")
+    @GetMapping("/buscarPorId/{id}")
     public ResponseEntity<TurnoDTO> buscar(@PathVariable Long id) {
         TurnoDTO turno = turnoService.buscarTurnoID(id);
 
         return ResponseEntity.ok(turno);
     }
 
-    @RequestMapping("/ConsultarTodosTurnos")
+    @RequestMapping("/ConsultarTodos")
     public ResponseEntity<List<TurnoDTO>> getTodosTurnos(){
         return ResponseEntity.ok(turnoService.listarTodosTurnos());
     }

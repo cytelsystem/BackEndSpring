@@ -2,6 +2,7 @@ package com.dh.odontologica.controller;
 
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.dao.impl.DomicilioDAOH2;
+import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -12,25 +13,25 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/domicilios")
 public class DomicilioController {
 
     @Autowired
-    DomicilioService domicilioService;
+    DomicilioService service;
 
-    @PostMapping("/CrearDomicilio")
-    public ResponseEntity<DomicilioDTO> crearDomicilio(@RequestBody DomicilioDTO domicilio){
-        return ResponseEntity.ok(domicilioService.guardarDomicilioService(domicilio));
+    @PostMapping("/Crear")
+    public ResponseEntity<String> crear(@RequestBody Domicilio domicilio){
+        return ResponseEntity.ok(service.guardar(domicilio));
     }
 
-    @DeleteMapping("/eliminarDomicilio/{id}")
-    public ResponseEntity<String> eliminarDomicilio(@PathVariable Long id) {
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity<String> eliminar(@PathVariable Long id) {
         HttpHeaders responseHeaders = new HttpHeaders();
 
         ResponseEntity<String> response = null;
 
-        if (domicilioService.buscarDomicilioPorId(id) != null) {
-            domicilioService.eliminar(id);
-//            response = ResponseEntity.status(HttpStatus.NO_CONTENT).body("Eliminado");
+        if (service.BuscarPorId(id) != null) {
+            service.eliminar(id);
             response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
         } else {
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -40,29 +41,29 @@ public class DomicilioController {
 
     }
 
-    @PutMapping("/actualizarDomicilio")
-    public ResponseEntity<DomicilioDTO> actualizar(@RequestBody DomicilioDTO domicilio) {
-        ResponseEntity<DomicilioDTO> response = null;
+    @PutMapping("/actualizar")
+    public ResponseEntity<Domicilio> actualizar(@RequestBody Domicilio domicilio) {
+        ResponseEntity<Domicilio> response = null;
 
-        if (domicilio.getId() != null && domicilioService.buscarDomicilioPorId(domicilio.getId()) != null)
-            response = ResponseEntity.ok(domicilioService.actualizar(domicilio));
+        if (service.BuscarPorId(domicilio.))
+            response = ResponseEntity.ok(service.guardar(domicilio));
         else
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 
         return response;
     }
 
-    @GetMapping("/buscarPorIdDomicilio/{id}")
+    @GetMapping("/buscarPorIdo/{id}")
     public ResponseEntity<DomicilioDTO> buscar(@PathVariable Long id) {
-        DomicilioDTO odontologo = domicilioService.buscarDomicilioPorId(id);
+        DomicilioDTO odontologo = service.buscarDomicilioPorId(id);
 
         return ResponseEntity.ok(odontologo);
     }
 
 
-    @RequestMapping("/ConsultarTodosDomicilio")
+    @RequestMapping("/ConsultarTodos")
     public ResponseEntity<List<DomicilioDTO>> getTodosDomicilio(){
-        return ResponseEntity.ok(domicilioService.listarTodosDomicilio());
+        return ResponseEntity.ok(service.listarTodosDomicilio());
     }
 
 

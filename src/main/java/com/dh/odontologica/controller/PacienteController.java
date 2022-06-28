@@ -13,15 +13,16 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/pacientes")
 public class PacienteController {
 
     @Autowired
-    PacienteService pacienteService;
+    PacienteService service;
     @Autowired
     DomicilioService domicilioService;
 
 
-    @PostMapping("/CrearPaciente")
+    @PostMapping("/Crear")
     public ResponseEntity<PacienteDTO> crearPaciente(@RequestBody PacienteDTO paciente){
 
         ResponseEntity<PacienteDTO> respuesta;
@@ -42,7 +43,7 @@ public class PacienteController {
     }
 
 
-    @DeleteMapping("/eliminarPaciente/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminarPaciente(@PathVariable Long id) {
         HttpHeaders responseHeaders = new HttpHeaders();
 
@@ -60,7 +61,7 @@ public class PacienteController {
 
     }
 
-    @PutMapping("/actualizarPaciente")
+    @PutMapping("/actualizar")
     public ResponseEntity<PacienteDTO> actualizar(@RequestBody PacienteDTO paciente) {
         ResponseEntity<PacienteDTO> response = null;
 
@@ -72,14 +73,14 @@ public class PacienteController {
         return response;
     }
 
-    @GetMapping("/buscarPorIdPaciente/{id}")
+    @GetMapping("/buscarPorId/{id}")
     public ResponseEntity<PacienteDTO> buscar(@PathVariable Long id) {
         PacienteDTO paciente = pacienteService.buscarPacienteID(id);
 
         return ResponseEntity.ok(paciente);
     }
 
-    @RequestMapping("/ConsultarTodosPacientes")
+    @RequestMapping("/ConsultarTodos")
     public ResponseEntity<List<PacienteDTO>> getTodosPacientes(){
         return ResponseEntity.ok(pacienteService.listarTodosPacientes());
     }

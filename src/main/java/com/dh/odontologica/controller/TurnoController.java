@@ -1,8 +1,7 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.model.OdontologoDTO;
-import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.model.TurnoDTO;
+import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.service.OdontologoService;
 import com.dh.odontologica.service.PacienteService;
 import com.dh.odontologica.service.TurnoService;
@@ -11,7 +10,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -28,35 +29,28 @@ public class TurnoController {
 
 
     @PostMapping("/Crear")
-    public ResponseEntity<TurnoDTO> crearTurno(@RequestBody TurnoDTO turno){
+    public ResponseEntity<String> crear(@RequestBody Turno t){
+        ResponseEntity<String> respuesta = null;
 
-        ResponseEntity<TurnoDTO> respuesta;
-
-        PacienteDTO p = pacienteService.buscarPacienteID(turno.getPaciente().getId());
-        OdontologoDTO o = odontologoService.buscarOdontologoporID(turno.getOdontologo().getId());
-
-        if(p != null && o != null){
-            turnoService.CrearTurno(turno);
-            respuesta = ResponseEntity.ok(turno);
+        if(service.guardar(t) != null){
+            respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
-            respuesta = ResponseEntity.badRequest().body(null);
+            respuesta = ResponseEntity.internalServerError().body("Ooops");
         }
 
-        System.out.println(p);
-        System.out.println(o);
         return respuesta;
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminarTurno(@PathVariable Long id) {
-        HttpHeaders responseHeaders = new HttpHeaders();
+    public ResponseEntity<String> eliminar(@PathVariable Long id) {
 
-        System.out.println(id);
+        HttpHeaders responseHeaders = new HttpHeaders();
 
         ResponseEntity<String> response = null;
 
-        if (turnoService.buscarTurnoID(id) != null) {
-            turnoService.eliminar(id);
+        if (service.buscarPorId(id) != null) {
+
+            service.eliminar(id);
             response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
         } else {
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -66,29 +60,35 @@ public class TurnoController {
 
     }
 
+
     @PutMapping("/actualizar")
-    public ResponseEntity<TurnoDTO> actualizar(@RequestBody TurnoDTO turno) {
-        ResponseEntity<TurnoDTO> response = null;
+    public ResponseEntity<String> actualizar(@RequestBody Turno t){
+        ResponseEntity<String> respuesta = null;
 
-        if (turno.getId() != null && turnoService.buscarTurnoID(turno.getId()) != null)
-            response = ResponseEntity.ok(turnoService.actualizarTurno(turno));
-        else
-            response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        if(service.guardar(t) != null){
+            respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
+        }else{
+            respuesta = ResponseEntity.internalServerError().body("Ooops");
+        }
 
-        return response;
+        return respuesta;
     }
+
 
     @GetMapping("/buscarPorId/{id}")
-    public ResponseEntity<TurnoDTO> buscar(@PathVariable Long id) {
-        TurnoDTO turno = turnoService.buscarTurnoID(id);
+    public Optional<Turno> buscarPorId(@PathVariable Long id){
 
-        return ResponseEntity.ok(turno);
+        return service.buscarPorId(id);
     }
 
-    @RequestMapping("/ConsultarTodos")
-    public ResponseEntity<List<TurnoDTO>> getTodosTurnos(){
-        return ResponseEntity.ok(turnoService.listarTodosTurnos());
+
+    @GetMapping("/ConsultarTodos")
+    public ResponseEntity<List<TurnoDTO>> consultarTodos(){
+
+        return ResponseEntity.ok(service.buscarTodos());
     }
+
+
 
 
 

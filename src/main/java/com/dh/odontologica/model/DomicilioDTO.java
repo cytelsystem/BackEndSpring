@@ -2,7 +2,6 @@ package com.dh.odontologica.model;
 
 public class DomicilioDTO {
 
-
     private Long id;
     private String calle;
     private String numero;

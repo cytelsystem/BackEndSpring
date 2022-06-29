@@ -38,7 +38,7 @@ public class TurnoService {
         repository.deleteById(id);
     }
 
-    public Optional<Turno> BuscarPorId(Long id){
+    public Optional<Turno> buscarPorId(Long id){
 
         return repository.findById(id);
     }

@@ -12,11 +12,7 @@ public class PacienteDTO {
     private String apellido;
     private String email;
     private String dni;
-
-    @Autowired
     private Date fechaDeIngreso;
-    @Autowired
-    private DomicilioDTO domicilio;
 
 
     //**************************************Constructores********************************************//
@@ -70,14 +66,6 @@ public class PacienteDTO {
 
     public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
-    }
-
-    public DomicilioDTO getDomicilio() {
-        return domicilio;
-    }
-
-    public void setDomicilio(DomicilioDTO domicilio) {
-        this.domicilio = domicilio;
     }
 
 

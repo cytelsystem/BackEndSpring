@@ -21,7 +21,7 @@ public class Paciente {
     private String email;
     private String dni;
     private Date fechaDeIngreso;
-    private Domicilio domicilio;
+
 
 
     //**************************************Constructores********************************************//
@@ -29,19 +29,15 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.dni = dni;
-        this.fechaDeIngreso = fechaDeIngreso;
-        this.domicilio = domicilio;
-    }
 
     //**************************************Getter y Setter****************************************//
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -82,14 +78,6 @@ public class Paciente {
 
     public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
-    }
-
-    public Domicilio getDomicilio() {
-        return domicilio;
-    }
-
-    public void setDomicilio(Domicilio domicilio) {
-        this.domicilio = domicilio;
     }
 
 

@@ -34,7 +34,7 @@ public class OdontologoService {
         repository.deleteById(id);
     }
 
-    public Optional<Odontologo> BuscarPorId(Long id){
+    public Optional<Odontologo> buscarPorId(Long id){
 
         return repository.findById(id);
     }

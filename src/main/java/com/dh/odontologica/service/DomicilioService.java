@@ -35,7 +35,7 @@ public class DomicilioService {
         repository.deleteById(id);
     }
 
-    public Optional<Domicilio> BuscarPorId(Long id){
+    public Optional<Domicilio> buscarPorId(Long id){
 
         return repository.findById(id);
     }

@@ -25,7 +25,7 @@ public class PacienteService {
     private ModelMapper modelMapper;
 
 
-    //******************************Metodos*******************************//
+    //**********************************Metodos***************************************//
 
     public String guardar(Paciente p){
         String respuesta = null;
@@ -39,7 +39,7 @@ public class PacienteService {
         repository.deleteById(id);
     }
 
-    public Optional<Paciente> BuscarPorId(Long id){
+    public Optional<Paciente> buscarPorId(Long id){
 
         return repository.findById(id);
     }

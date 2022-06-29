@@ -4,7 +4,7 @@ package com.dh.odontologica.persistence.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Odontologo")
+@Table(name = "odontologo")
 public class Odontologo {
 
     @Id

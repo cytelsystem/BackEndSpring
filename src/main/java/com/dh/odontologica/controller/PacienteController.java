@@ -2,6 +2,7 @@ package com.dh.odontologica.controller;
 
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.model.PacienteDTO;
+import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.service.DomicilioService;
 import com.dh.odontologica.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -21,37 +23,29 @@ public class PacienteController {
     @Autowired
     DomicilioService domicilioService;
 
-
     @PostMapping("/Crear")
-    public ResponseEntity<PacienteDTO> crearPaciente(@RequestBody PacienteDTO paciente){
+    public ResponseEntity<String> crear(@RequestBody Paciente p){
+        ResponseEntity<String> respuesta = null;
 
-        ResponseEntity<PacienteDTO> respuesta;
-
-        DomicilioDTO d = domicilioService.buscarDomicilioPorId(paciente.getDomicilio().getId());
-
-        System.out.println(d);
-
-        if(d != null){
-            pacienteService.guardaPacienteService(paciente);
-            respuesta = ResponseEntity.ok(paciente);
+        if(service.guardar(p) != null){
+            respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
-            respuesta = ResponseEntity.badRequest().body(null);
+            respuesta = ResponseEntity.internalServerError().body("Ooops");
         }
 
-        System.out.println(paciente);
         return respuesta;
     }
 
-
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminarPaciente(@PathVariable Long id) {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) {
+
         HttpHeaders responseHeaders = new HttpHeaders();
 
         ResponseEntity<String> response = null;
 
-        if (pacienteService.buscarPacienteID(id) != null) {
-            pacienteService.eliminar(id);
-//            response = ResponseEntity.status(HttpStatus.NO_CONTENT).body("Eliminado");
+        if (service.buscarPorId(id) != null) {
+
+            service.eliminar(id);
             response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
         } else {
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -61,30 +55,33 @@ public class PacienteController {
 
     }
 
+
     @PutMapping("/actualizar")
-    public ResponseEntity<PacienteDTO> actualizar(@RequestBody PacienteDTO paciente) {
-        ResponseEntity<PacienteDTO> response = null;
+    public ResponseEntity<String> actualizar(@RequestBody Paciente p){
+        ResponseEntity<String> respuesta = null;
 
-        if (paciente.getId() != null && pacienteService.buscarPacienteID(paciente.getId()) != null)
-            response = ResponseEntity.ok(pacienteService.actualizar(paciente));
-        else
-            response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        if(service.guardar(p) != null){
+            respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
+        }else{
+            respuesta = ResponseEntity.internalServerError().body("Ooops");
+        }
 
-        return response;
+        return respuesta;
     }
+
 
     @GetMapping("/buscarPorId/{id}")
-    public ResponseEntity<PacienteDTO> buscar(@PathVariable Long id) {
-        PacienteDTO paciente = pacienteService.buscarPacienteID(id);
+    public Optional<Paciente> buscarPorId(@PathVariable Long id){
 
-        return ResponseEntity.ok(paciente);
+        return service.buscarPorId(id);
     }
 
-    @RequestMapping("/ConsultarTodos")
-    public ResponseEntity<List<PacienteDTO>> getTodosPacientes(){
-        return ResponseEntity.ok(pacienteService.listarTodosPacientes());
-    }
 
+    @GetMapping("/ConsultarTodos")
+    public ResponseEntity<List<PacienteDTO>> consultarTodos(){
+
+        return ResponseEntity.ok(service.buscarTodos());
+    }
 
 
 }

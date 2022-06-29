@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"date\": \"2022-06-25\"\r\n}",
+					"raw": "{\r\n    \"date\": \"2021-05-26\",\r\n    \"odontologo\":{\r\n        \"nombre\": \"cesar\",\r\n        \"apellido\": \"prieto\",\r\n        \"matricula\": \"CP5086\"\r\n    },\r\n    \"paciente\":{\r\n        \"nombre\": \"cesar\",\r\n        \"apellido\": \"prieto\",\r\n        \"email\": \"cesarp@gmail.com\",\r\n        \"dni\": \"CP8594\",\r\n        \"fechaDeIngreso\": \"2022-06-29\"\r\n    }\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -22,10 +22,6 @@ public class TurnoController {
 
     @Autowired
     private TurnoService service;
-    @Autowired
-    private PacienteService pacienteService;
-    @Autowired
-    private OdontologoService odontologoService;
 
 
     @PostMapping("/Crear")
@@ -87,9 +83,6 @@ public class TurnoController {
 
         return ResponseEntity.ok(service.buscarTodos());
     }
-
-
-
 
 
 }

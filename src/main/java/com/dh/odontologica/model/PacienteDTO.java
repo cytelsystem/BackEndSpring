@@ -2,7 +2,7 @@ package com.dh.odontologica.model;
 
 
 import com.dh.odontologica.persistence.entity.Domicilio;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import java.util.Date;
 
@@ -17,10 +17,9 @@ public class PacienteDTO {
     private Domicilio domicilio;
 
 
-    //**************************************Constructores********************************************//
+    //**********************************Constructor*****************************************//
 
-
-    //**************************************Getter y Setter****************************************//
+    //**********************************Getter y Setter**********************************//
 
     public Long getId() {
         return id;
@@ -79,12 +78,7 @@ public class PacienteDTO {
     }
 
 
-    //*****************************************toString*****************************************//
-
-
-
-
-    //*************************************Metodos****************************************//
+    //*****************************************************************************************//
 
 
 }

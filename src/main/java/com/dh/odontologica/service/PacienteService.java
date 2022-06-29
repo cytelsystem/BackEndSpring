@@ -1,6 +1,5 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;

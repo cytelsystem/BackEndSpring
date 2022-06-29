@@ -20,8 +20,6 @@ public class PacienteController {
 
     @Autowired
     PacienteService service;
-    @Autowired
-    DomicilioService domicilioService;
 
     @PostMapping("/Crear")
     public ResponseEntity<String> crear(@RequestBody Paciente p){

@@ -52,8 +52,6 @@ public class OdontologoController {
 
     }
 
-
-//    @PostMapping("/actualizar")
     @PutMapping("/actualizar")
     public ResponseEntity<String> actualizar(@RequestBody Odontologo o){
         ResponseEntity<String> respuesta = null;

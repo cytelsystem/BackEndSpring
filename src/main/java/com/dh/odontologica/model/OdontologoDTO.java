@@ -6,11 +6,9 @@ public class OdontologoDTO {
     private String apellido;
     private String matricula;
 
-    //*****************************Constructores***********************************//
+    //**********************************Constructor*****************************************//
 
-
-
-    //************************Getter y setter***************************//
+    //**********************************Getter y Setter**********************************//
 
     public Long getId() {
         return id;

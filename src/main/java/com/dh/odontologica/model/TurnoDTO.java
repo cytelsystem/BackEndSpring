@@ -1,13 +1,18 @@
 package com.dh.odontologica.model;
 
 
+import com.dh.odontologica.persistence.entity.Odontologo;
+import com.dh.odontologica.persistence.entity.Paciente;
+
 import java.sql.Date;
-import java.util.Objects;
+
 
 public class TurnoDTO {
 
     private Long id;
     private Date date;
+    private Odontologo odontologo;
+    private Paciente paciente;
 
 
     //***********************************Constructores***************************************//
@@ -31,16 +36,23 @@ public class TurnoDTO {
         this.date = date;
     }
 
+    public Odontologo getOdontologo() {
+        return odontologo;
+    }
 
-//**********************************toString y hashCode***********************************//
+    public void setOdontologo(Odontologo odontologo) {
+        this.odontologo = odontologo;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
 
 
-
-
-    //***************************************Metodos***************************************//
-
-
-
-
+    //**************************************************************************************************//
 
 }

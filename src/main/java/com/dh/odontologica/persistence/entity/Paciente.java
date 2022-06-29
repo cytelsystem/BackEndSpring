@@ -1,6 +1,6 @@
 package com.dh.odontologica.persistence.entity;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -27,21 +27,25 @@ public class Paciente {
     @JoinColumn(name = "id_domicilio" , referencedColumnName = "id_domicilio")
     private Domicilio domicilio;
 
+    @OneToOne(mappedBy = "paciente")
+    @JsonIgnore
+    private Turno turno;
+
 
 
     //**************************************Constructores********************************************//
     public Paciente() {
 
-
     }
 
-    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio) {
+    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Turno turno) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.dni = dni;
         this.fechaDeIngreso = fechaDeIngreso;
         this.domicilio = domicilio;
+        this.turno = turno;
     }
 
     //**************************************Getter y Setter****************************************//
@@ -49,7 +53,6 @@ public class Paciente {
     public Long getId() {
         return id;
     }
-
 
     public String getNombre() {
         return nombre;
@@ -99,12 +102,16 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
+    public Turno getTurno() {
+        return turno;
+    }
+
+    public void setTurno(Turno turno) {
+        this.turno = turno;
+    }
+
 
     //*****************************************toString*****************************************//
-
-
-
-    //*************************************Metodos****************************************//
 
 
 }

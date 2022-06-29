@@ -1,14 +1,11 @@
 package com.dh.odontologica.service;
 
-import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.model.TurnoDTO;
-import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.persistence.repository.TurnoRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

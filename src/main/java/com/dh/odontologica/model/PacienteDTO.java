@@ -1,6 +1,7 @@
 package com.dh.odontologica.model;
 
 
+import com.dh.odontologica.persistence.entity.Domicilio;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
@@ -13,6 +14,7 @@ public class PacienteDTO {
     private String email;
     private String dni;
     private Date fechaDeIngreso;
+    private Domicilio domicilio;
 
 
     //**************************************Constructores********************************************//
@@ -66,6 +68,14 @@ public class PacienteDTO {
 
     public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
+    }
+
+    public Domicilio getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(Domicilio domicilio) {
+        this.domicilio = domicilio;
     }
 
 

@@ -1,16 +1,13 @@
 package com.dh.odontologica.persistence.entity;
 
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "Domicilio")
+
+@Document(collection = "Domicilio")
 public class Domicilio {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "domicilioSecuence")
-    @SequenceGenerator(name = "domicilioSecuence", sequenceName = "domicilioSecuence", allocationSize = 1)
-
-    @Column(name = "id_domicilio", nullable = false)
     private Long id;
 
     private String calle;
@@ -18,8 +15,6 @@ public class Domicilio {
     private String localidad;
     private String provincia;
 
-    @OneToOne(mappedBy = "domicilio")
-    private Paciente paciente;
 
     //**********************************Constructor*****************************************//
 
@@ -39,6 +34,9 @@ public class Domicilio {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCalle() {
         return calle;

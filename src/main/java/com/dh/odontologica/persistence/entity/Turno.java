@@ -1,34 +1,17 @@
 package com.dh.odontologica.persistence.entity;
 
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.sql.Date;
 
 
-@Entity
-@Table(name = "Turno")
+@Document(collection = "Turno")
 public class Turno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "turnoSequence")
-    @SequenceGenerator(name = "turnoSequence", sequenceName = "turnoSequence", allocationSize = 1)
-
-    @Column(name = "id_turno", nullable = false)
     private Long id;
 
     private Date date;
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_odontologo" , referencedColumnName = "id_odontologo")
-    private Odontologo odontologo;
-
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_paciente" , referencedColumnName = "id_paciente")
-    private Paciente paciente;
-
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id_odontologo" , referencedColumnName = "id_odontologo")
-//    private Odontologo odontologo;
 
 
     //***********************************Constructores***************************************//
@@ -36,16 +19,17 @@ public class Turno {
     public Turno() {
     }
 
-    public Turno(Date date, Odontologo odontologo, Paciente paciente) {
+    public Turno(Date date) {
         this.date = date;
-        this.odontologo = odontologo;
-        this.paciente = paciente;
     }
-
-    //*********************************Getter y setter****************************************//
+//*********************************Getter y setter****************************************//
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Date getDate() {
@@ -54,22 +38,6 @@ public class Turno {
 
     public void setDate(Date date) {
         this.date = date;
-    }
-
-    public Odontologo getOdontologo() {
-        return odontologo;
-    }
-
-    public void setOdontologo(Odontologo odontologo) {
-        this.odontologo = odontologo;
-    }
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
     }
 
 

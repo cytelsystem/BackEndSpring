@@ -1,36 +1,20 @@
 package com.dh.odontologica.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table(name = "odontologo")
+@Document(collection = "Odontologo")
 public class Odontologo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "odontologoSequence")
-    @SequenceGenerator(name = "odontologoSequence", sequenceName = "odontologoSequence", allocationSize = 1)
-
-    @Column(name = "id_odontologo", nullable = false)
     private Long id;
 
     private String nombre;
     private String apellido;
     private String matricula;
-
-
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "odontologo")
-    @JsonIgnore
-    private Set<Turno> turnos = new HashSet<>();
-
-
-//    @OneToOne(mappedBy = "odontologo")
-//    @JsonIgnore
-//    private Turno turno;
-
-
 
     //*****************************Constructores***********************************//
 
@@ -42,11 +26,14 @@ public class Odontologo {
         this.apellido = apellido;
         this.matricula = matricula;
     }
-
-    //************************Getter y setter***************************//
+//************************Getter y setter***************************//
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -71,14 +58,6 @@ public class Odontologo {
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
-    }
-
-    public Set<Turno> getTurnos() {
-        return turnos;
-    }
-
-    public void setTurnos(Set<Turno> turnos) {
-        this.turnos = turnos;
     }
 
 

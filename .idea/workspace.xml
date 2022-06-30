@@ -6,10 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ErrorFecha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Odontologo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/DomicilioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/DomicilioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>

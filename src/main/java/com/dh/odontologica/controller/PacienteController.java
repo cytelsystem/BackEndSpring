@@ -1,7 +1,7 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.model.PacienteDTO;
+import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.service.DomicilioService;
 import com.dh.odontologica.service.PacienteService;
@@ -20,6 +20,8 @@ public class PacienteController {
 
     @Autowired
     PacienteService service;
+    @Autowired
+    DomicilioService domicilioService;
 
     @PostMapping("/Crear")
     public ResponseEntity<String> crear(@RequestBody Paciente p){
@@ -33,6 +35,29 @@ public class PacienteController {
 
         return respuesta;
     }
+
+    //********************************Opcion 2**************************************//
+//    @PostMapping("/Crear")
+//    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
+//
+//        ResponseEntity<Paciente> respuesta;
+//
+//        Optional<Domicilio> d = domicilioService.buscarPorId(paciente.getDomicilio().getId());
+//
+//        System.out.println(d);
+//
+//        if(d != null){
+//            service.guardar(paciente);
+//            respuesta = ResponseEntity.ok(paciente);
+//        }else{
+//            respuesta = ResponseEntity.badRequest().body(null);
+//        }
+//
+//        System.out.println(paciente);
+//        return respuesta;
+//    }
+
+
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Long id) {

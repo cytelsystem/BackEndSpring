@@ -28,6 +28,8 @@ public class TurnoController {
     public ResponseEntity<String> crear(@RequestBody Turno t){
         ResponseEntity<String> respuesta = null;
 
+        System.out.println(t);
+
         if(service.guardar(t) != null){
             respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{

@@ -24,6 +24,8 @@ public class TurnoService {
     //******************************Metodos*******************************//
 
     public String guardar(Turno t){
+
+        System.out.println(t);
         String respuesta = null;
         if (repository.save(t) != null){
             respuesta = "ok";

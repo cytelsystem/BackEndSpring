@@ -17,10 +17,8 @@ import java.util.Optional;
 @RequestMapping("/paquetes")
 public class PaqueteriaController {
 
-
         @Autowired
         PaqueteService service;
-
 
         @PostMapping("/Crear")
         public ResponseEntity<String> crear(@RequestBody Paquete o){
@@ -74,12 +72,10 @@ public class PaqueteriaController {
             return service.buscarPorId(id);
         }
 
-
         @GetMapping("/ConsultarTodos")
         public ResponseEntity<List<PaqueteDTO>> consultarTodos(){
 
             return ResponseEntity.ok(service.buscarTodos());
         }
-
 
     }

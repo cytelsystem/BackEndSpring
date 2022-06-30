@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "664a3a4d-4af9-45d3-8a6d-73ddc328fd40",
-		"name": "ORM Domicilio",
+		"name": "Mongo Paquetes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
 	},
@@ -21,13 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/domicilios/Crear",
+					"raw": "localhost:8080/paquetes/Crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"domicilios",
+						"paquetes",
 						"Crear"
 					]
 				}
@@ -40,13 +40,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/domicilios/eliminar/1",
+					"raw": "localhost:8080/paquetes/eliminar/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"domicilios",
+						"paquetes",
 						"eliminar",
 						"1"
 					]
@@ -69,13 +69,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/domicilios/actualizar",
+					"raw": "localhost:8080/paquetes/actualizar",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"domicilios",
+						"paquetes",
 						"actualizar"
 					]
 				}
@@ -88,13 +88,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/domicilios/buscarPorId/2",
+					"raw": "localhost:8080/paquetes/buscarPorId/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"domicilios",
+						"paquetes",
 						"buscarPorId",
 						"2"
 					]
@@ -108,13 +108,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/domicilios/ConsultarTodos",
+					"raw": "localhost:8080/paquetes/ConsultarTodos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"domicilios",
+						"paquetes",
 						"ConsultarTodos"
 					]
 				}

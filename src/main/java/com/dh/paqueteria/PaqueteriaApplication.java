@@ -1,13 +1,13 @@
-package com.dh.odontologica;
+package com.dh.paqueteria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OdontologicaApplication {
+public class PaqueteriaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OdontologicaApplication.class, args);
+		SpringApplication.run(PaqueteriaApplication.class, args);
 
 	}
 

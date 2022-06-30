@@ -1,4 +1,4 @@
-package com.dh.odontologica.configuration;
+package com.dh.paqueteria.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

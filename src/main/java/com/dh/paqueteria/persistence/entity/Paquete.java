@@ -4,7 +4,7 @@ package com.dh.paqueteria.persistence.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Pacientes")
+@Document(collection = "Paquetes")
 public class Paquete {
 
     @Id

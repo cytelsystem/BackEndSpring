@@ -33,7 +33,6 @@ public class Paquete {
         this.destinoProvincia = destinoProvincia;
     }
 
-
     //********************************************************************************//
 
     public Long getId() {

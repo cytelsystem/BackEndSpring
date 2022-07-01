@@ -78,4 +78,10 @@ public class PaqueteriaController {
             return ResponseEntity.ok(service.buscarTodos());
         }
 
+        @GetMapping("/buscarPorEnCamino")
+        public ResponseEntity<List<PaqueteDTO>> buscarPorEnCamino(){
+
+            return ResponseEntity.ok(service.buscarPorEnCamino());
+        }
+
     }

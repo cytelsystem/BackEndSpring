@@ -42,13 +42,26 @@ public class PaqueteService {
 
     public List<PaqueteDTO> buscarTodos(){
 
-        List<PaqueteDTO> pacientes = new ArrayList<>();
+        List<PaqueteDTO> paquetes = new ArrayList<>();
 
         for(Paquete paquete: repository.findAll()){
-            pacientes.add(modelMapper.map(paquete, PaqueteDTO.class));
+            paquetes.add(modelMapper.map(paquete, PaqueteDTO.class));
         }
 
-        return pacientes;
+        return paquetes;
+    }
+
+    public List<PaqueteDTO> buscarPorEnCamino(){
+
+        List<PaqueteDTO> paquetes = new ArrayList<>();
+
+        for(Paquete paquete: repository.findAll()){
+            if(paquete.getEstado().equals("camino")){
+            paquetes.add(modelMapper.map(paquete, PaqueteDTO.class));
+            }
+        }
+
+        return paquetes;
     }
 
 

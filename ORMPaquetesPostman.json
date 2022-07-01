@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "664a3a4d-4af9-45d3-8a6d-73ddc328fd40",
+		"_postman_id": "6dfdee96-75e2-47d0-80a3-262d590b0182",
 		"name": "Mongo Paquetes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12464718"
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"calle\": \"de los santos\",\r\n    \"numero\": \"40 - 34\",\r\n    \"localidad\": \"puenteAranda\",\r\n    \"provincia\": \"Bogota\"\r\n}",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"codigo\": \"4025\",\r\n    \"nombreProducto\": \"Celulares\",\r\n    \"estado\": \"camino\",\r\n    \"destinoCalle\": \"40\",\r\n    \"destinoNumero\": \"25\",\r\n    \"destinolocalidad\": \"Puentearanda\",\r\n    \"destinoProvincia\": \"Bogota\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,6 +104,25 @@
 		},
 		{
 			"name": "ConsultarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/paquetes/ConsultarTodos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"paquetes",
+						"ConsultarTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorEnCamino",
 			"request": {
 				"method": "GET",
 				"header": [],

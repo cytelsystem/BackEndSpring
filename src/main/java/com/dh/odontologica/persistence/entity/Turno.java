@@ -21,14 +21,12 @@ public class Turno {
     @JoinColumn(name = "id_odontologo" , referencedColumnName = "id_odontologo")
     private Odontologo odontologo;
 
-
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_paciente" , referencedColumnName = "id_paciente")
     private Paciente paciente;
 
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id_odontologo" , referencedColumnName = "id_odontologo")
-//    private Odontologo odontologo;
+
+
 
 
     //***********************************Constructores***************************************//

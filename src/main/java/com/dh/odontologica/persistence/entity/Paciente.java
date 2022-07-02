@@ -2,7 +2,7 @@ package com.dh.odontologica.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
-import java.util.Date;
+import java.util.*;
 
 
 @Entity
@@ -27,9 +27,9 @@ public class Paciente {
     @JoinColumn(name = "id_domicilio" , referencedColumnName = "id_domicilio")
     private Domicilio domicilio;
 
-    @OneToOne(mappedBy = "paciente")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "paciente")
     @JsonIgnore
-    private Turno turno;
+    private Set<Turno> turnos = new HashSet<>();
 
 
 
@@ -38,20 +38,24 @@ public class Paciente {
 
     }
 
-    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Turno turno) {
+    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Set<Turno> turnos) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.dni = dni;
         this.fechaDeIngreso = fechaDeIngreso;
         this.domicilio = domicilio;
-        this.turno = turno;
+        this.turnos = turnos;
     }
 
-    //**************************************Getter y Setter****************************************//
+//**************************************Getter y Setter****************************************//
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -102,16 +106,14 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-    public Turno getTurno() {
-        return turno;
+    public Set<Turno> getTurnos() {
+        return turnos;
     }
 
-    public void setTurno(Turno turno) {
-        this.turno = turno;
+    public void setTurnos(Set<Turno> turnos) {
+        this.turnos = turnos;
     }
 
-
-    //*****************************************toString*****************************************//
-
+    //****************************************************************************************//
 
 }

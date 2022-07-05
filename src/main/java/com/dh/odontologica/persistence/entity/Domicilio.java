@@ -1,5 +1,7 @@
 package com.dh.odontologica.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -19,6 +21,7 @@ public class Domicilio {
     private String provincia;
 
     @OneToOne(mappedBy = "domicilio")
+    @JsonIgnore
     private Paciente paciente;
 
     //**********************************Constructor*****************************************//

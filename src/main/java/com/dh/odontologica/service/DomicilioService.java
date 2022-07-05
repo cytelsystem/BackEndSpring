@@ -1,8 +1,10 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.repository.DomicilioRepository;
+import org.hibernate.ResourceClosedException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,8 +33,13 @@ public class DomicilioService {
         return respuesta;
     }
 
-    public void eliminar(Long id){
-        repository.deleteById(id);
+    public void eliminar(Long id) throws ResourceNotFoundException {
+
+        if(buscarPorId(id) != null) {
+            repository.deleteById(id);
+        }else {
+            throw new ResourceClosedException("No existe este registro con el id" + " " + id);
+        }
     }
 
     public Optional<Domicilio> buscarPorId(Long id){

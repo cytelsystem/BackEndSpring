@@ -23,39 +23,41 @@ public class PacienteController {
     @Autowired
     DomicilioService domicilioService;
 
-    @PostMapping("/Crear")
-    public ResponseEntity<String> crear(@RequestBody Paciente p){
-        ResponseEntity<String> respuesta = null;
+//    @PostMapping("/Crear")
+//    public ResponseEntity<String> crear(@RequestBody Paciente p){
+//        ResponseEntity<String> respuesta = null;
+//
+//        if(service.guardar(p) != null){
+//            respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
+//        }else{
+//            respuesta = ResponseEntity.internalServerError().body("Ooops");
+//        }
+//
+//        return respuesta;
+//    }
+    //********************************Opcion 2**************************************//
 
-        if(service.guardar(p) != null){
-            respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
+    @PostMapping("/Crear")
+    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
+
+        ResponseEntity<Paciente> respuesta;
+
+        Optional<Domicilio> d = domicilioService.buscarPorId(paciente.getDomicilio().getId());
+
+        System.out.println(d);
+
+        if(d != null){
+//            paciente.setDomicilio(paciente.getDomicilio());
+            service.guardar(paciente);
+            respuesta = ResponseEntity.ok(paciente);
         }else{
-            respuesta = ResponseEntity.internalServerError().body("Ooops");
+            respuesta = ResponseEntity.badRequest().body(null);
         }
 
+        System.out.println(paciente);
         return respuesta;
     }
 
-    //********************************Opcion 2**************************************//
-//    @PostMapping("/Crear")
-//    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
-//
-//        ResponseEntity<Paciente> respuesta;
-//
-//        Optional<Domicilio> d = domicilioService.buscarPorId(paciente.getDomicilio().getId());
-//
-//        System.out.println(d);
-//
-//        if(d != null){
-//            service.guardar(paciente);
-//            respuesta = ResponseEntity.ok(paciente);
-//        }else{
-//            respuesta = ResponseEntity.badRequest().body(null);
-//        }
-//
-//        System.out.println(paciente);
-//        return respuesta;
-//    }
 
 
 

@@ -1,5 +1,6 @@
 package com.dh.odontologica.controller;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
@@ -34,7 +35,7 @@ public class DomicilioController {
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable Long id) {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
 
         HttpHeaders responseHeaders = new HttpHeaders();
 

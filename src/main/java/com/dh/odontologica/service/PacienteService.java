@@ -21,18 +21,31 @@ public class PacienteService {
     private PacienteRepository repository;
 
     @Autowired
+    private DomicilioService domicilioService;
+
+    @Autowired
     private ModelMapper modelMapper;
 
 
     //**********************************Metodos***************************************//
 
     public String guardar(Paciente p){
+
+        Optional<Domicilio> d = domicilioService.buscarPorId(p.getDomicilio().getId());
+
+
         String respuesta = null;
-        if (repository.save(p) != null){
+
+        if(d != null){
+            repository.save(xxx);
             respuesta = "ok";
+
+
         }
+
         return respuesta;
     }
+
 
     public void eliminar(Long id){
         repository.deleteById(id);

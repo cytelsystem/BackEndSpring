@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/OdontologicaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/configuration/MapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/DomicilioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/OdontologoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/PacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/TurnoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Odontologo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/DomicilioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

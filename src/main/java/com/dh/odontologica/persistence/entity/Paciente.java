@@ -32,7 +32,6 @@ public class Paciente {
     private Set<Turno> turnos = new HashSet<>();
 
 
-
     //**************************************Constructores********************************************//
     public Paciente() {
 
@@ -113,6 +112,7 @@ public class Paciente {
     public void setTurnos(Set<Turno> turnos) {
         this.turnos = turnos;
     }
+
 
     //****************************************************************************************//
 

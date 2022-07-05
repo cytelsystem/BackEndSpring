@@ -23,8 +23,12 @@ public class Paciente {
     private Date fechaDeIngreso;
 
 
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "id_domicilio" , referencedColumnName = "id_domicilio")
+//    private Domicilio domicilio;
+
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_domicilio" , referencedColumnName = "id_domicilio")
+    @JoinColumn(name = "id_domicilio")
     private Domicilio domicilio;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "paciente")
@@ -32,12 +36,14 @@ public class Paciente {
     private Set<Turno> turnos = new HashSet<>();
 
 
-    //**************************************Constructores********************************************//
-    public Paciente() {
 
+    //**************************************Constructores********************************************//
+
+    public Paciente() {
     }
 
-    public Paciente(String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Set<Turno> turnos) {
+    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Set<Turno> turnos) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -47,7 +53,7 @@ public class Paciente {
         this.turnos = turnos;
     }
 
-//**************************************Getter y Setter****************************************//
+    //**************************************Getter y Setter****************************************//
 
     public Long getId() {
         return id;

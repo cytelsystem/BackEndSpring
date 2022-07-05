@@ -27,23 +27,17 @@ public class PacienteService {
     private ModelMapper modelMapper;
 
 
-    //**********************************Metodos***************************************//
+    //**********************************Metodos*****************xx**********************//
 
     public String guardar(Paciente p){
-
-        Optional<Domicilio> d = domicilioService.buscarPorId(p.getDomicilio().getId());
-
-
         String respuesta = null;
 
-        if(d != null){
-            repository.save(xxx);
+        if (p != null) {
+            repository.save(p);
             respuesta = "ok";
 
-
         }
-
-        return respuesta;
+       return respuesta;
     }
 
 

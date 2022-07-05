@@ -3,6 +3,7 @@ package com.dh.odontologica.persistence.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Entity
 @Table(name = "Domicilio")
@@ -34,6 +35,9 @@ public class Domicilio {
         this.numero = numero;
         this.localidad = localidad;
         this.provincia = provincia;
+    }
+
+    public Domicilio(Optional<Domicilio> buscarPorId) {
     }
 
     //**********************************Getter y Setter**********************************//

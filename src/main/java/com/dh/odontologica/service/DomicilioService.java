@@ -33,13 +33,14 @@ public class DomicilioService {
         return respuesta;
     }
 
-    public void eliminar(Long id) throws ResourceNotFoundException {
+    public void eliminar(Long id)throws ResourceNotFoundException {
 
-        if(buscarPorId(id) != null) {
-            repository.deleteById(id);
+        if(buscarPorId(id).isEmpty()) {
+            throw new ResourceNotFoundException("No existe este registro con el id" + " " + id);
         }else {
-            throw new ResourceClosedException("No existe este registro con el id" + " " + id);
+            repository.deleteById(id);
         }
+
     }
 
     public Optional<Domicilio> buscarPorId(Long id){

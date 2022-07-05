@@ -37,19 +37,9 @@ public class DomicilioController {
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
 
-        HttpHeaders responseHeaders = new HttpHeaders();
+        service.eliminar(id);
 
-        ResponseEntity<String> response = null;
-
-        if (service.buscarPorId(id) != null) {
-
-            service.eliminar(id);
-            response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
-        } else {
-            response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-
-        return response;
+        return ResponseEntity.ok("Registro Eliminado ID"+ " " + id) ;
 
     }
 

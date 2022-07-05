@@ -1,5 +1,6 @@
 package com.dh.odontologica.controller;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.TurnoDTO;
 import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.service.OdontologoService;
@@ -38,22 +39,9 @@ public class TurnoController {
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable Long id) {
-
-        HttpHeaders responseHeaders = new HttpHeaders();
-
-        ResponseEntity<String> response = null;
-
-        if (service.buscarPorId(id) != null) {
-
-            service.eliminar(id);
-            response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
-        } else {
-            response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-
-        return response;
-
+    public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
+        service.eliminar(id);
+        return ResponseEntity.ok("Registro Eliminado ID"+ " " + id) ;
     }
 
 

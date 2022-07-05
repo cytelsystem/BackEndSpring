@@ -1,5 +1,6 @@
 package com.dh.odontologica.controller;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;
@@ -35,48 +36,14 @@ public class PacienteController {
 
         return respuesta;
     }
-    //********************************Opcion 2**************************************//
-
-//    @PostMapping("/Crear")
-//    public ResponseEntity<Paciente> crearPaciente(@RequestBody Paciente paciente){
-//
-//        ResponseEntity<Paciente> respuesta;
-//
-//        Optional<Domicilio> d = domicilioService.buscarPorId(paciente.getDomicilio().getId());
-//
-//        System.out.println(d);
-//
-//        if(d != null){
-////            paciente.setDomicilio(paciente.getDomicilio());
-//            service.guardar(paciente);
-//            respuesta = ResponseEntity.ok(paciente);
-//        }else{
-//            respuesta = ResponseEntity.badRequest().body(null);
-//        }
-//
-//        System.out.println(paciente);
-//        return respuesta;
-//    }
-
-
 
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable Long id) {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
 
-        HttpHeaders responseHeaders = new HttpHeaders();
+        service.eliminar(id);
 
-        ResponseEntity<String> response = null;
-
-        if (service.buscarPorId(id) != null) {
-
-            service.eliminar(id);
-            response = new ResponseEntity<String>("Registro Eliminado ID"+ " " + id, responseHeaders, HttpStatus.OK);
-        } else {
-            response = ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-
-        return response;
+        return ResponseEntity.ok("Registro Eliminado ID"+ " " + id) ;
 
     }
 

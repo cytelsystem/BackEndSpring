@@ -1,5 +1,6 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;
@@ -41,8 +42,14 @@ public class PacienteService {
     }
 
 
-    public void eliminar(Long id){
-        repository.deleteById(id);
+    public void eliminar(Long id)throws ResourceNotFoundException {
+
+        if(buscarPorId(id).isEmpty()) {
+            throw new ResourceNotFoundException("No existe este registro con el id" + " " + id);
+        }else {
+            repository.deleteById(id);
+        }
+
     }
 
     public Optional<Paciente> buscarPorId(Long id){

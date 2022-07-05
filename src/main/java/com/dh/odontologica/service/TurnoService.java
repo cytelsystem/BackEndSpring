@@ -1,5 +1,6 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.TurnoDTO;
 import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.persistence.repository.TurnoRepository;
@@ -31,8 +32,14 @@ public class TurnoService {
         return respuesta;
     }
 
-    public void eliminar(Long id){
-        repository.deleteById(id);
+    public void eliminar(Long id)throws ResourceNotFoundException {
+
+        if(buscarPorId(id).isEmpty()) {
+            throw new ResourceNotFoundException("No existe este registro con el id" + " " + id);
+        }else {
+            repository.deleteById(id);
+        }
+
     }
 
     public Optional<Turno> buscarPorId(Long id){

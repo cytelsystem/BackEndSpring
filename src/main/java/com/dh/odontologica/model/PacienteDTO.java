@@ -4,6 +4,7 @@ package com.dh.odontologica.model;
 import com.dh.odontologica.persistence.entity.Domicilio;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class PacienteDTO {
@@ -13,7 +14,7 @@ public class PacienteDTO {
     private String apellido;
     private String email;
     private String dni;
-    private Date fechaDeIngreso;
+    private LocalDate fechaDeIngreso;
     private Domicilio domicilio;
 
 
@@ -61,11 +62,11 @@ public class PacienteDTO {
         this.dni = dni;
     }
 
-    public Date getFechaDeIngreso() {
+    public LocalDate getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(Date fechaDeIngreso) {
+    public void setFechaDeIngreso(LocalDate fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 

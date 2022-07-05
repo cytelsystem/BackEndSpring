@@ -2,6 +2,7 @@ package com.dh.odontologica.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.*;
 
 
@@ -20,14 +21,10 @@ public class Paciente {
     private String apellido;
     private String email;
     private String dni;
-    private Date fechaDeIngreso;
+    private LocalDate fechaDeIngreso;
 
 
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id_domicilio" , referencedColumnName = "id_domicilio")
-//    private Domicilio domicilio;
-
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "id_domicilio")
     private Domicilio domicilio;
 
@@ -42,8 +39,7 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(Long id, String nombre, String apellido, String email, String dni, Date fechaDeIngreso, Domicilio domicilio, Set<Turno> turnos) {
-        this.id = id;
+    public Paciente(String nombre, String apellido, String email, String dni, LocalDate fechaDeIngreso, Domicilio domicilio, Set<Turno> turnos) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
@@ -53,14 +49,10 @@ public class Paciente {
         this.turnos = turnos;
     }
 
-    //**************************************Getter y Setter****************************************//
+//**************************************Getter y Setter****************************************//
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNombre() {
@@ -95,11 +87,11 @@ public class Paciente {
         this.dni = dni;
     }
 
-    public Date getFechaDeIngreso() {
+    public LocalDate getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(Date fechaDeIngreso) {
+    public void setFechaDeIngreso(LocalDate fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 

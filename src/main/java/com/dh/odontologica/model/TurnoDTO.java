@@ -5,12 +5,13 @@ import com.dh.odontologica.persistence.entity.Odontologo;
 import com.dh.odontologica.persistence.entity.Paciente;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 
 public class TurnoDTO {
 
     private Long id;
-    private Date date;
+    private LocalDate date;
     private Odontologo odontologo;
     private Paciente paciente;
 
@@ -28,11 +29,11 @@ public class TurnoDTO {
         this.id = id;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

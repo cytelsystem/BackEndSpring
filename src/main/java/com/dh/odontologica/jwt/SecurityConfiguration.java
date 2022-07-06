@@ -1,4 +1,4 @@
-package com.dh.odontologica;
+package com.dh.odontologica.jwt;
 
 import com.dh.odontologica.jwt.JwtRequestFilter;
 import com.dh.odontologica.service.AuthenticationService;

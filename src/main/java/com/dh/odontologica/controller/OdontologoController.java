@@ -21,7 +21,7 @@ public class OdontologoController {
     OdontologoService service;
 
 
-    @PostMapping("/Crear")
+    @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Odontologo o){
         ResponseEntity<String> respuesta = null;
 

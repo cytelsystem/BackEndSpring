@@ -25,7 +25,7 @@ public class TurnoController {
     private TurnoService service;
 
 
-    @PostMapping("/Crear")
+    @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Turno t){
         ResponseEntity<String> respuesta = null;
 

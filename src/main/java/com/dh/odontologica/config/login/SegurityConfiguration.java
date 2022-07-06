@@ -28,13 +28,16 @@ public class SegurityConfiguration  extends WebSecurityConfigurerAdapter {
 
             http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/user/**")
-                .permitAll()
+                .antMatchers("/domicilio/crear").hasRole("ADMIN")
+                .antMatchers("/odontologo/crear").hasRole("ADMIN")
+                .antMatchers("/pacientes/crear").hasRole("ADMIN")
+                .antMatchers("/turno/crear").hasRole("USER")
                 .anyRequest()
                 .authenticated().and()
-                .formLogin();
+                .httpBasic();
+//                .formLogin();
 
-//        String encodedPassword = encoder.encode("UserPassword");
+
     }
 
     @Override

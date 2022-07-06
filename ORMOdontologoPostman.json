@@ -21,14 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/odontologos/Crear",
+					"raw": "localhost:8080/odontologos/crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"odontologos",
-						"Crear"
+						"crear"
 					]
 				}
 			},

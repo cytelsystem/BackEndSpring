@@ -21,14 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/turnos/Crear",
+					"raw": "localhost:8080/turnos/crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"turnos",
-						"Crear"
+						"crear"
 					]
 				}
 			},

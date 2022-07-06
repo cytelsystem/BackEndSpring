@@ -24,7 +24,7 @@ public class PacienteController {
     @Autowired
     DomicilioService domicilioService;
 
-    @PostMapping("/Crear")
+    @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Paciente p){
         ResponseEntity<String> respuesta = null;
 

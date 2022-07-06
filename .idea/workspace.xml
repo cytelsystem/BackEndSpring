@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORMDomicilioPostman.json" beforeDir="false" afterPath="$PROJECT_DIR$/ORMDomicilioPostman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORMOdontologoPostman.json" beforeDir="false" afterPath="$PROJECT_DIR$/ORMOdontologoPostman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORMPacientePostman.json" beforeDir="false" afterPath="$PROJECT_DIR$/ORMPacientePostman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORMTurnoPostman.json" beforeDir="false" afterPath="$PROJECT_DIR$/ORMTurnoPostman.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

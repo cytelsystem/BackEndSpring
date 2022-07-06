@@ -21,5 +21,4 @@ public class UserController {
         return "<h1> Welcome admin </h1>";
     }
 
-
 }

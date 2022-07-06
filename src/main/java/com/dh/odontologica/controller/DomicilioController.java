@@ -21,7 +21,7 @@ public class DomicilioController {
     DomicilioService service;
 
 
-    @PostMapping("/Crear")
+    @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Domicilio d){
         ResponseEntity<String> respuesta = null;
 

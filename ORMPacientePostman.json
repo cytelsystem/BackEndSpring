@@ -21,14 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/pacientes/Crear",
+					"raw": "localhost:8080/pacientes/crear",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"pacientes",
-						"Crear"
+						"crear"
 					]
 				}
 			},
@@ -68,7 +68,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/pacientes/eliminar/6",
+					"raw": "localhost:8080/pacientes/eliminar/1",
 					"host": [
 						"localhost"
 					],
@@ -76,7 +76,7 @@
 					"path": [
 						"pacientes",
 						"eliminar",
-						"6"
+						"1"
 					]
 				}
 			},

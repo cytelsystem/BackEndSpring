@@ -34,6 +34,7 @@ public class JwtUtil {
         Claims claims = extractAllClaims(token);
         return claims.getSubject();
     }
+
     private Claims extractAllClaims(String token) {
         return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody();
     }

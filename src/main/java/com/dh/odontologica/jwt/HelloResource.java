@@ -1,6 +1,5 @@
-package com.dh.odontologica.controller;
+package com.dh.odontologica.jwt;
 
-import com.dh.odontologica.jwt.JwtUtil;
 import com.dh.odontologica.model.AuthenticationRequest;
 import com.dh.odontologica.model.AuthenticationResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AuthenticationController {
+public class HelloResource {
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -33,11 +32,14 @@ public class AuthenticationController {
         }catch (BadCredentialsException e) {
             throw new Exception("Incorrect", e);
         }
-        final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
+        final UserDetails  userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         final String jwt = jwtUtil.generateToken(userDetails);
 
         return ResponseEntity.ok(new AuthenticationResponse((jwt)));
     }
 
-
+    @RequestMapping({"/hello"})
+    public String hello() {
+        return "Hello World";
+    }
 }

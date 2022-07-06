@@ -17,7 +17,14 @@
 		<java.version>18</java.version>
 	</properties>
 	<dependencies>
-		<!-- Spring Segurity -->
+
+		<!-- Spring Segurity por token -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		<!-- Spring Segurity basica-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>

@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Lenguaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Lenguaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/LenguajeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/LenguajeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -84,6 +84,7 @@
       <recent name="com.dh.odontologica.persistence" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dh.odontologica.controller" />
       <recent name="com.dh.odontologica" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -91,7 +92,7 @@
       <recent name="com.dh.odontologica.persistence.dao.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OdontologicaApplicationTest.buscarTodosLosLenguajesAPI">
+  <component name="RunManager" selected="JUnit.LenguajeControllerTest">
     <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplication" />
       <module name="spring" />
@@ -105,32 +106,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OdontologicaApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LenguajeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dh.odontologica.*" />
+          <option name="PATTERN" value="com.dh.odontologica.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dh.odontologica" />
-      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplicationTest" />
+      <option name="PACKAGE_NAME" value="com.dh.odontologica.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.controller.LenguajeControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OdontologicaApplicationTest.buscarTodosLosLenguajesAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LenguajeControllerTest.obtenerLenguajesPorTipo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dh.odontologica.*" />
+          <option name="PATTERN" value="com.dh.odontologica.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.dh.odontologica" />
-      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplicationTest" />
-      <option name="METHOD_NAME" value="buscarTodosLosLenguajesAPI" />
+      <option name="PACKAGE_NAME" value="com.dh.odontologica.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.controller.LenguajeControllerTest" />
+      <option name="METHOD_NAME" value="obtenerLenguajesPorTipo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LenguajeControllerTest.obtenerTodosLosLenguajes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.odontologica.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.odontologica.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.controller.LenguajeControllerTest" />
+      <option name="METHOD_NAME" value="obtenerTodosLosLenguajes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,8 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OdontologicaApplicationTest.buscarTodosLosLenguajesAPI" />
-        <item itemvalue="JUnit.OdontologicaApplicationTest" />
+        <item itemvalue="JUnit.LenguajeControllerTest" />
+        <item itemvalue="JUnit.LenguajeControllerTest.obtenerLenguajesPorTipo" />
+        <item itemvalue="JUnit.LenguajeControllerTest.obtenerTodosLosLenguajes" />
         <item itemvalue="Application.OdontologicaApplication" />
       </list>
     </recent_temporary>

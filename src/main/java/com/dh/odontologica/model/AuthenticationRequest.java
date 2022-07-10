@@ -1,5 +1,6 @@
 package com.dh.odontologica.model;
 
+
 public class AuthenticationRequest {
 
     private String username;

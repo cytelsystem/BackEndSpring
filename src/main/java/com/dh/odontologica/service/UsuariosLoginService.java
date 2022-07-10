@@ -1,4 +1,4 @@
-package com.dh.odontologica.jwt;
+package com.dh.odontologica.service;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class MyUserDetailsService implements UserDetailsService {
+public class UsuariosLoginService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        return new User("foo", "foo", new ArrayList<>());
+        return new User("julio", "julio123", new ArrayList<>());
     }
 }

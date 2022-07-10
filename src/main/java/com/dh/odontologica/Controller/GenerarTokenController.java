@@ -1,7 +1,10 @@
-package com.dh.odontologica.jwt;
+package com.dh.odontologica.Controller;
 
+import com.dh.odontologica.jwt.JwtUtil;
 import com.dh.odontologica.model.AuthenticationRequest;
 import com.dh.odontologica.model.AuthenticationResponse;
+import com.dh.odontologica.model.JugadorDTO;
+import com.dh.odontologica.service.JugadorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,14 +14,14 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 @RestController
-public class HelloResource {
+@RequestMapping("/")
+public class GenerarTokenController {
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -41,8 +44,6 @@ public class HelloResource {
         return ResponseEntity.ok(new AuthenticationResponse((jwt)));
     }
 
-    @RequestMapping({"/hello"})
-    public String hello() {
-        return "Hello World";
-    }
+
+
 }

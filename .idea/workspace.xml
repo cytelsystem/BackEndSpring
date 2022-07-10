@@ -6,40 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/AppUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/AppUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/AppUsuarioRoles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/DataLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/PasswordEncoder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/SegurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/configuration/MapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/MiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/exceptions/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/DomicilioDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/OdontologoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/PacienteDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/TurnoDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Odontologo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/DomicilioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/OdontologoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/PacienteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/repository/TurnoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Lenguaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/Lenguaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/LenguajeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/LenguajeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/OdontologicaApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +91,7 @@
       <recent name="com.dh.odontologica.persistence.dao.impl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OdontologicaApplicationTest.buscarTodosLosLenguajesAPI">
     <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplication" />
       <module name="spring" />
@@ -137,8 +105,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OdontologicaApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.odontologica.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.odontologica" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OdontologicaApplicationTest.buscarTodosLosLenguajesAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.odontologica.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.odontologica" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplicationTest" />
+      <option name="METHOD_NAME" value="buscarTodosLosLenguajesAPI" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OdontologicaApplicationTest.buscarTodosLosLenguajesAPI" />
+        <item itemvalue="JUnit.OdontologicaApplicationTest" />
         <item itemvalue="Application.OdontologicaApplication" />
       </list>
     </recent_temporary>

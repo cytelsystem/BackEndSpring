@@ -1,5 +1,7 @@
 package com.dh.odontologica.model;
 
+
+
 public class Lenguaje {
 
     private String tipo;

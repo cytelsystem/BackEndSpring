@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ErrorFecha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/config/login/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/DomicilioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/model/DomicilioDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -81,6 +84,7 @@
       <recent name="com.dh.odontologica.persistence" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dh.odontologica.controller" />
       <recent name="com.dh.odontologica" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -88,7 +92,7 @@
       <recent name="com.dh.odontologica.persistence.dao.impl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DomicilioControllerTest">
     <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplication" />
       <module name="spring" />
@@ -102,8 +106,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DomicilioControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.odontologica.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dh.odontologica.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.controller.DomicilioControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DomicilioControllerTest" />
         <item itemvalue="Application.OdontologicaApplication" />
       </list>
     </recent_temporary>

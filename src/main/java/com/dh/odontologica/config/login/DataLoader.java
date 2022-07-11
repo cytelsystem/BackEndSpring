@@ -27,7 +27,7 @@ public class DataLoader implements ApplicationRunner {
         String hashepassword = passwordEncoder.encode("password");
 
         BCryptPasswordEncoder passwordEncoder2 = new BCryptPasswordEncoder();
-        String hashepassword2 = passwordEncoder.encode("password2");
+        String hashepassword2 = passwordEncoder.encode("password");
 
         userRepository.save(new AppUser("hector", "hectorjm", "hectorjaviermorenoh@gmail.com", hashepassword, AppUsuarioRoles.ADMIN));
         userRepository.save(new AppUser("carlos", "carlos2", "carlos@gmail.com", hashepassword2, AppUsuarioRoles.USER));

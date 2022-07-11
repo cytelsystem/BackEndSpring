@@ -10,6 +10,14 @@ public class DomicilioDTO {
 
     //**********************************Constructor*****************************************//
 
+    public DomicilioDTO(String calle, String numero, String localidad, String provincia) {
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
+    }
+
+
     //**********************************Getter y Setter**********************************//
 
     public Long getId() {

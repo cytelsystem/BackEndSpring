@@ -5,13 +5,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public abstract class AbstractControllerTest<T> {
 
-
-    public static String asJsonString(DomicilioDTO domicilioDTO) {
+    public static String asJsonString(final Object obj) {
         try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            return objectMapper.writeValueAsString(domicilioDTO);
-        } catch(Exception e) {
+            return new ObjectMapper().writeValueAsString(obj);
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
+
+
+
 }
+
+
+

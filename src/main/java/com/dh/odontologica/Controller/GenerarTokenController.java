@@ -3,21 +3,14 @@ package com.dh.odontologica.Controller;
 import com.dh.odontologica.jwt.JwtUtil;
 import com.dh.odontologica.model.AuthenticationRequest;
 import com.dh.odontologica.model.AuthenticationResponse;
-import com.dh.odontologica.model.JugadorDTO;
-import com.dh.odontologica.service.JugadorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/")
@@ -29,7 +22,6 @@ public class GenerarTokenController {
     private UserDetailsService userDetailsService;
     @Autowired
     private JwtUtil jwtUtil;
-
 
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception{
@@ -43,7 +35,5 @@ public class GenerarTokenController {
 
         return ResponseEntity.ok(new AuthenticationResponse((jwt)));
     }
-
-
 
 }

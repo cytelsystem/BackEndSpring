@@ -34,17 +34,26 @@ public class SegurityConfiguration  extends WebSecurityConfigurerAdapter {
 //                .authenticated().and()
 //                .formLogin();
 
+
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/user/**")
                 .permitAll()
-                .antMatchers("/domicilio/crear").hasRole("ADMIN")
-                .antMatchers("/odontologo/crear").hasRole("ADMIN")
-                .antMatchers("/pacientes/crear").hasRole("ADMIN")
-                .antMatchers("/turno/crear").hasRole("USER")
                 .anyRequest()
                 .authenticated().and()
                 .httpBasic();
+
+//        http.csrf().disable()
+//                .authorizeRequests()
+//                .antMatchers("/user/**")
+//                .permitAll()
+//                .antMatchers("/domicilio/crear").hasRole("ADMIN")
+//                .antMatchers("/odontologo/crear").hasRole("ADMIN")
+//                .antMatchers("/pacientes/crear").hasRole("ADMIN")
+//                .antMatchers("/turno/crear").hasRole("USER")
+//                .anyRequest()
+//                .authenticated().and()
+//                .httpBasic();
 
     }
 

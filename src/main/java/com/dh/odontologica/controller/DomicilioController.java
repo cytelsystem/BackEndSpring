@@ -59,9 +59,15 @@ public class DomicilioController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Domicilio> buscarPorId(@PathVariable Long id){
+    public ResponseEntity<Optional<Domicilio>>  buscarPorId(@PathVariable Long id){
 
-        return service.buscarPorId(id);
+        Optional<Domicilio> buscarID = service.buscarPorId(id);
+
+        if (!buscarID.isEmpty()){
+            return new ResponseEntity(buscarID, HttpStatus.OK);
+        }
+
+        return new ResponseEntity(HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/ConsultarTodos")

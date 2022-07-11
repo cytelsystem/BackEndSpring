@@ -1,7 +1,6 @@
 package com.dh.odontologica.controller;
 
 import com.dh.odontologica.configuration.AbstractControllerTest;
-import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -18,7 +17,7 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import com.google.gson.Gson;
+
 
 
 @RunWith(SpringRunner.class)
@@ -61,26 +60,34 @@ class DomicilioControllerTest {
 
 
     @Test
-    void buscarPorId() throws Exception{
+    void buscarPorId() throws Exception {
         this.crearDomicilio();
         this.mvc.perform(MockMvcRequestBuilders.get("/domicilios/buscarPorId/{id}", "1")
-                .contentType(MediaType.APPLICATION_JSON))
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
-
     }
+
+    @Test
+    void buscarPorIdNotFound() throws Exception {
+        this.crearDomicilio();
+        this.mvc.perform(MockMvcRequestBuilders.get("/domicilios/buscarPorId/{id}", 5)
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isNotFound())
+                .andDo(MockMvcResultHandlers.print());
+    }
+
 
     @Test
     void consultarTodos() throws Exception{
         this.crearDomicilio();
-        this.mvc.perform(MockMvcRequestBuilders.get("domicilios/ConsultarTodos")
+        this.mvc.perform(MockMvcRequestBuilders.get("/domicilios/ConsultarTodos")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
 
 
-    //**************************************************************************//
 
 
     //**************************************************************************//

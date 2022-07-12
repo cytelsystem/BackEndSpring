@@ -1,9 +1,12 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.controller.TurnoController;
+import com.dh.odontologica.exceptions.BadRequestException;
 import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.TurnoDTO;
 import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.persistence.repository.TurnoRepository;
+import org.apache.log4j.Logger;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +17,7 @@ import java.util.Optional;
 
 @Service
 public class TurnoService {
+    private Logger logger = Logger.getLogger(TurnoService.class);
 
     @Autowired
     private TurnoRepository repository;
@@ -24,7 +28,9 @@ public class TurnoService {
 
     //******************************Metodos*******************************//
 
-    public String guardar(Turno t){
+    public String guardar(Turno t) throws Exception {
+
+
         String respuesta = null;
         if (repository.save(t) != null){
             respuesta = "ok";
@@ -32,7 +38,7 @@ public class TurnoService {
         return respuesta;
     }
 
-    public void eliminar(Long id)throws ResourceNotFoundException {
+    public void eliminar(Long id) throws Exception {
 
         if(buscarPorId(id).isEmpty()) {
             throw new ResourceNotFoundException("No existe este registro con el id" + " " + id);
@@ -42,7 +48,7 @@ public class TurnoService {
 
     }
 
-    public Optional<Turno> buscarPorId(Long id){
+    public Optional<Turno> buscarPorId(Long id) throws Exception{
 
         return repository.findById(id);
     }

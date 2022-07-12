@@ -1,1 +1,3 @@
 com\dh\odontologica\OdontologicaApplicationTest.class
+com\dh\odontologica\controller\TurnoControllerTest.class
+com\dh\odontologica\controller\DomicilioControllerTest.class

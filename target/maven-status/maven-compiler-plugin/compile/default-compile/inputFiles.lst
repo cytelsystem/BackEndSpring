@@ -2,6 +2,7 @@ E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\entity\Turno.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\configuration\MapperConfig.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\repository\DomicilioRepository.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\configuration\AbstractControllerTest.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\OdontologicaApplication.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\service\TurnoService.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\repository\PacienteRepository.java
@@ -11,6 +12,7 @@ E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\entity\Odontologo.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\repository\TurnoRepository.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login\UserRepository.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\exceptions\GlobalException.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\service\UserDetailsServiceImpl.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\exceptions\ResourceNotFoundException.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\MiController.java
@@ -21,6 +23,7 @@ E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login\AppUserService.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\model\OdontologoDTO.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\service\DomicilioService.java
+E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\exceptions\BadRequestException.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\persistence\entity\Paciente.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login\SegurityConfiguration.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login\AppUsuarioRoles.java

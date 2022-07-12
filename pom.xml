@@ -23,7 +23,6 @@
 			<artifactId>gson</artifactId>
 			<version>2.9.0</version>
 		</dependency>
-
 		<!-- Spring Segurity por token -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>

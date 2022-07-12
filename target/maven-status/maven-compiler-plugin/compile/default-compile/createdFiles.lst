@@ -1,4 +1,5 @@
 com\dh\odontologica\service\DomicilioService.class
+com\dh\odontologica\exceptions\GlobalException.class
 com\dh\odontologica\exceptions\ResourceNotFoundException.class
 com\dh\odontologica\persistence\entity\Odontologo.class
 com\dh\odontologica\persistence\repository\TurnoRepository.class
@@ -11,6 +12,7 @@ com\dh\odontologica\config\login\SegurityConfiguration.class
 com\dh\odontologica\controller\TurnoController.class
 com\dh\odontologica\model\TurnoDTO.class
 com\dh\odontologica\service\TurnoService.class
+com\dh\odontologica\exceptions\BadRequestException.class
 com\dh\odontologica\service\PacienteService.class
 com\dh\odontologica\config\login\AppUsuarioRoles.class
 com\dh\odontologica\model\DomicilioDTO.class
@@ -29,4 +31,5 @@ com\dh\odontologica\model\PacienteDTO.class
 com\dh\odontologica\persistence\entity\Domicilio.class
 com\dh\odontologica\config\login\AppUserService.class
 com\dh\odontologica\controller\DomicilioController.class
+com\dh\odontologica\configuration\AbstractControllerTest.class
 com\dh\odontologica\persistence\repository\PacienteRepository.class

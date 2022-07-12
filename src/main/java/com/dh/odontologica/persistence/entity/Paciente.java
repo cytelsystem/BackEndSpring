@@ -49,13 +49,18 @@ public class Paciente {
         this.turnos = turnos;
     }
 
-//**************************************Getter y Setter****************************************//
+
+
+    //**************************************Getter y Setter****************************************//
 
     public Long getId() {
         return id;
     }
 
-    public String getNombre() {
+    public void setId(Long id) {
+        this.id = id;
+    }
+        public String getNombre() {
         return nombre;
     }
 

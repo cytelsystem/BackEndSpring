@@ -40,12 +40,17 @@ public class Domicilio {
     public Domicilio(Optional<Domicilio> buscarPorId) {
     }
 
+
+
     //**********************************Getter y Setter**********************************//
 
     public Long getId() {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCalle() {
         return calle;

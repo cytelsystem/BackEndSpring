@@ -6,6 +6,7 @@ import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.service.DomicilioService;
 import com.dh.odontologica.service.PacienteService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -18,6 +19,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
+
+    private Logger logger = Logger.getLogger(PacienteController.class);
 
     @Autowired
     PacienteService service;
@@ -36,7 +39,6 @@ public class PacienteController {
 
         return respuesta;
     }
-
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {

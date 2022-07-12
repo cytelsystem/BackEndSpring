@@ -28,8 +28,6 @@ public class Turno {
 
 
 
-
-
     //***********************************Constructores***************************************//
     public Turno() {
 
@@ -41,10 +39,16 @@ public class Turno {
         this.paciente = paciente;
     }
 
+
+
     //*********************************Getter y setter****************************************//
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public LocalDate getDate() {

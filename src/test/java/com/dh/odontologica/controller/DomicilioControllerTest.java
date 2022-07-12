@@ -4,6 +4,7 @@ import com.dh.odontologica.configuration.AbstractControllerTest;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +25,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @SpringBootTest
 @AutoConfigureMockMvc(addFilters = false)
 class DomicilioControllerTest {
+
+    private Logger logger = Logger.getLogger(DomicilioControllerTest.class);
 
     @Autowired
     private MockMvc mvc;
@@ -59,14 +62,14 @@ class DomicilioControllerTest {
     }
 
 
-    @Test
-    void buscarPorId() throws Exception {
-        this.crearDomicilio();
-        this.mvc.perform(MockMvcRequestBuilders.get("/domicilios/buscarPorId/{id}", "1")
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print());
-    }
+//    @Test
+//    void buscarPorId() throws Exception {
+//        this.crearDomicilio();
+//        this.mvc.perform(MockMvcRequestBuilders.get("/domicilios/buscarPorId/{id}", "1")
+//                        .contentType(MediaType.APPLICATION_JSON))
+//                .andExpect(MockMvcResultMatchers.status().isOk())
+//                .andDo(MockMvcResultHandlers.print());
+//    }
 
     @Test
     void buscarPorIdNotFound() throws Exception {

@@ -1,9 +1,11 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.controller.TurnoController;
 import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.repository.DomicilioRepository;
+import org.apache.log4j.Logger;
 import org.hibernate.ResourceClosedException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ import java.util.Optional;
 
 @Service
 public class DomicilioService {
+    private Logger logger = Logger.getLogger(DomicilioService.class);
 
     @Autowired
     private DomicilioRepository repository;

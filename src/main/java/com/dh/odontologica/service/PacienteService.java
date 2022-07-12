@@ -1,10 +1,12 @@
 package com.dh.odontologica.service;
 
+import com.dh.odontologica.controller.TurnoController;
 import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.PacienteDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.persistence.repository.PacienteRepository;
+import org.apache.log4j.Logger;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +18,7 @@ import java.util.Optional;
 
 @Service
 public class PacienteService {
+    private Logger logger = Logger.getLogger(PacienteService.class);
 
 
     @Autowired

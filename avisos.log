@@ -1,0 +1,3 @@
+[2022-07-11 19:35:41] [ ERROR] [TurnoController:51] Registro no creado porque la fecha es anterior a la actual
+[2022-07-11 19:46:28] [ ERROR] [TurnoController:54] Registro de turno creado existosamente
+[2022-07-11 19:47:18] [ INFO ] [TurnoController:79] Turno actualizado exitosamente

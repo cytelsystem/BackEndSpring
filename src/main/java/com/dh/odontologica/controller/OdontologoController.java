@@ -4,6 +4,7 @@ import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.OdontologoDTO;
 import com.dh.odontologica.persistence.entity.Odontologo;
 import com.dh.odontologica.service.OdontologoService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/odontologos")
 public class OdontologoController {
+
+    private Logger logger = Logger.getLogger(OdontologoController.class);
 
     @Autowired
     OdontologoService service;

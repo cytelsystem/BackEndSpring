@@ -5,19 +5,12 @@ import com.dh.odontologica.model.TurnoDTO;
 import com.dh.odontologica.persistence.entity.Odontologo;
 import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.persistence.entity.Turno;
-import com.dh.odontologica.service.OdontologoService;
-import com.dh.odontologica.service.PacienteService;
 import com.dh.odontologica.service.TurnoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

@@ -25,32 +25,34 @@ public class OdontologoController {
 
 
     @PostMapping("/crear")
-    public ResponseEntity<String> crear(@RequestBody Odontologo o){
+    public ResponseEntity<String> crear(@RequestBody Odontologo o) throws Exception{
         ResponseEntity<String> respuesta = null;
 
         if(service.guardar(o) != null){
             respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
+            logger.error("No se pudo crear el Odontologo");
         }
 
         return respuesta;
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) throws Exception {
         service.eliminar(id);
         return ResponseEntity.ok("Registro Eliminado ID"+ " " + id) ;
     }
 
     @PutMapping("/actualizar")
-    public ResponseEntity<String> actualizar(@RequestBody Odontologo o){
+    public ResponseEntity<String> actualizar(@RequestBody Odontologo o) throws Exception {
         ResponseEntity<String> respuesta = null;
 
         if(service.guardar(o) != null){
             respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
+            logger.error("No se pudo actualizar el odontologo");
         }
 
         return respuesta;
@@ -58,14 +60,14 @@ public class OdontologoController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Odontologo> buscarPorId(@PathVariable Long id){
+    public Optional<Odontologo> buscarPorId(@PathVariable Long id) throws Exception {
 
         return service.buscarPorId(id);
     }
 
 
     @GetMapping("/ConsultarTodos")
-    public ResponseEntity<List<OdontologoDTO>> consultarTodos(){
+    public ResponseEntity<List<OdontologoDTO>> consultarTodos() throws Exception {
 
         return ResponseEntity.ok(service.buscarTodos());
     }

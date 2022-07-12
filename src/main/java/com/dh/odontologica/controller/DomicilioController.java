@@ -1,13 +1,10 @@
 package com.dh.odontologica.controller;
 
-import com.dh.odontologica.exceptions.ResourceNotFoundException;
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
 import org.apache.log4j.Logger;
-import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

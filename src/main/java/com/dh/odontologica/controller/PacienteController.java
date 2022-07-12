@@ -28,20 +28,21 @@ public class PacienteController {
     DomicilioService domicilioService;
 
     @PostMapping("/crear")
-    public ResponseEntity<String> crear(@RequestBody Paciente p){
+    public ResponseEntity<String> crear(@RequestBody Paciente p) throws Exception{
         ResponseEntity<String> respuesta = null;
 
         if(service.guardar(p) != null){
             respuesta = ResponseEntity.ok("El Registro fue creado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
+            logger.error("no se pudo crear el paciente");
         }
 
         return respuesta;
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminar(@PathVariable Long id) throws ResourceNotFoundException {
+    public ResponseEntity<String> eliminar(@PathVariable Long id) throws Exception {
 
         service.eliminar(id);
 
@@ -51,13 +52,14 @@ public class PacienteController {
 
 
     @PutMapping("/actualizar")
-    public ResponseEntity<String> actualizar(@RequestBody Paciente p){
+    public ResponseEntity<String> actualizar(@RequestBody Paciente p) throws Exception{
         ResponseEntity<String> respuesta = null;
 
         if(service.guardar(p) != null){
             respuesta = ResponseEntity.ok("El Registro fue actualizado con Exito");
         }else{
             respuesta = ResponseEntity.internalServerError().body("Ooops");
+            logger.error("no se pudo actualizar el paciente");
         }
 
         return respuesta;
@@ -65,14 +67,14 @@ public class PacienteController {
 
 
     @GetMapping("/buscarPorId/{id}")
-    public Optional<Paciente> buscarPorId(@PathVariable Long id){
+    public Optional<Paciente> buscarPorId(@PathVariable Long id) throws Exception{
 
         return service.buscarPorId(id);
     }
 
 
     @GetMapping("/ConsultarTodos")
-    public ResponseEntity<List<PacienteDTO>> consultarTodos(){
+    public ResponseEntity<List<PacienteDTO>> consultarTodos() throws Exception{
 
         return ResponseEntity.ok(service.buscarTodos());
     }

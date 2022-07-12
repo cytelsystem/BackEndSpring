@@ -7,26 +7,10 @@
     <list default="true" id="df82cd65-647c-4331-904d-5064d40d827c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avisos.log" beforeDir="false" afterPath="$PROJECT_DIR$/avisos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/DomicilioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/MiController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/OdontologoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/PacienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/controller/TurnoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Domicilio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/persistence/entity/Turno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/DomicilioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/OdontologoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dh/odontologica/service/TurnoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/controller/DomicilioControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dh/odontologica/controller/DomicilioControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,22 +97,24 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="OdontologicaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.OdontologicaApplication" />
+    <configuration name="DomicilioControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dh.odontologica.*" />
+          <option name="PATTERN" value="com.dh.odontologica.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.dh.odontologica.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.dh.odontologica.controller.DomicilioControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OdontologicaApplication" />
+        <item itemvalue="JUnit.DomicilioControllerTest" />
       </list>
     </recent_temporary>
   </component>

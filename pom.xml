@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.storage</groupId>
-	<artifactId>spring</artifactId>
+	<artifactId>Odontologica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>storage</name>
 	<description>Proyecto springMVC</description>
@@ -111,13 +111,13 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>RELEASE</version>
+			<version>7.6.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>RELEASE</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- Swagger Documentar api de cara al usuario consumidor -->

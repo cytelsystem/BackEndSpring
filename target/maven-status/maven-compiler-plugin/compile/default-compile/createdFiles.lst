@@ -19,7 +19,6 @@ com\dh\odontologica\model\DomicilioDTO.class
 com\dh\odontologica\service\OdontologoService.class
 com\dh\odontologica\config\login\AppUser.class
 com\dh\odontologica\configuration\MapperConfig.class
-com\dh\odontologica\controller\MiController.class
 com\dh\odontologica\config\login\PasswordEncoder.class
 com\dh\odontologica\persistence\entity\Turno.class
 com\dh\odontologica\persistence\repository\DomicilioRepository.class

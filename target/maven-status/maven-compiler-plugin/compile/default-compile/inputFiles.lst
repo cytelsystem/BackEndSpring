@@ -15,7 +15,6 @@ E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\exceptions\GlobalException.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\service\UserDetailsServiceImpl.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\exceptions\ResourceNotFoundException.java
-E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\MiController.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\DomicilioController.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\controller\OdontologoController.java
 E:\HECTORJM\Proyectos\java\Spring\src\main\java\com\dh\odontologica\config\login\PasswordEncoder.java

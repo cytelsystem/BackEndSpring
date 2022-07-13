@@ -17,17 +17,6 @@
 		<java.version>18</java.version>
 	</properties>
 	<dependencies>
-		<!-- Documentacion con Swagger https://springdoc.org/ -->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-security</artifactId>
-			<version>1.6.9</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -130,6 +119,12 @@
 			<artifactId>junit</artifactId>
 			<version>RELEASE</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- Swagger Documentar api de cara al usuario consumidor -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.6.9</version>
 		</dependency>
 
 	</dependencies>

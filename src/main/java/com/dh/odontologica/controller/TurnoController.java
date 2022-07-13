@@ -6,6 +6,7 @@ import com.dh.odontologica.persistence.entity.Odontologo;
 import com.dh.odontologica.persistence.entity.Paciente;
 import com.dh.odontologica.persistence.entity.Turno;
 import com.dh.odontologica.service.TurnoService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +26,7 @@ public class TurnoController {
     @Autowired
     private TurnoService service;
 
-
+    @Operation(summary = "Registrar un nuevo Turno")
     @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Turno t) throws Exception {
         ResponseEntity<String> respuesta = null;

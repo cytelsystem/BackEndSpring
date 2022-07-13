@@ -3,6 +3,8 @@ package com.dh.odontologica.persistence.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Optional;
 
 @Entity
@@ -14,8 +16,9 @@ public class Domicilio {
     @SequenceGenerator(name = "domicilioSecuence", sequenceName = "domicilioSecuence", allocationSize = 1)
 
     @Column(name = "id_domicilio", nullable = false)
+    @NotNull
     private Long id;
-
+    @Size(min = 1, max = 20)
     private String calle;
     private String numero;
     private String localidad;

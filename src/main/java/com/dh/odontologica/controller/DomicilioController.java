@@ -3,6 +3,7 @@ package com.dh.odontologica.controller;
 import com.dh.odontologica.model.DomicilioDTO;
 import com.dh.odontologica.persistence.entity.Domicilio;
 import com.dh.odontologica.service.DomicilioService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +22,7 @@ public class DomicilioController {
     @Autowired
     DomicilioService service;
 
-
+    @Operation(summary = "Registrar un nuevo Domicilio")
     @PostMapping("/crear")
     public ResponseEntity<String> crear(@RequestBody Domicilio d) throws Exception {
         ResponseEntity<String> respuesta = null;

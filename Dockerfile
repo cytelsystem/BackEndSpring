@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk16
+FROM adoptopenjdk/openjdk16:ubi
 
 ARG JAR_FILE=target/Odontologica-0.0.1-SNAPSHOT.jar
 

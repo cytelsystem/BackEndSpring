@@ -1,20 +1,28 @@
-version: '1.29.2'
+version: "3.1"
 services:
-  h2-db:
-    image: oscarfonts/h2
-    ports:
-      - 81:81
-
-  Odontologica:
-    build:
-      context: .
+  springboot-app:
+    container_name: OdontologicaApp
+    image: springbooot-app
+    build: .
     ports:
       - 8080:8080
     environment:
-      spring:
-        datasource:
-          url=jdbc:h2:~/Odontologica:
-      MONGO_PORT: 81
-      MONGO_DB: Odontologica
-      MONGO_USER: sa
-      MONGO_PASS:
+      MYSQL_HOST: mysqldb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+
+  mysqldb:
+    image: mysql:5.7
+    container_name: OdontologicaDB
+    restart: always
+    environment:
+      MYSQL_DATABASE: Odontologica
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - my-db:/var/lib/mysql
+volumes:
+  my-db:
+
+

@@ -10,19 +10,29 @@ services:
       MYSQL_HOST: mysqldb
       MYSQL_USER: root
       MYSQL_PASSWORD: root
-
+    networks:
+      - springmysql-net
+    depends_on:
+      - mysqldb
   mysqldb:
     image: mysql:5.7
     container_name: OdontologicaDB
     restart: always
+    networks:
+      - springmysql-net
     environment:
       MYSQL_DATABASE: Odontologica
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: 1234
     ports:
       - 3306:3306
     volumes:
       - my-db:/var/lib/mysql
 volumes:
   my-db:
+
+networks:
+  springmysql-net:
 
 

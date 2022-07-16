@@ -13,10 +13,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>storage</name>
 	<description>Proyecto springMVC</description>
-    <properties>
-        <java.version>18</java.version>
-        <maven.compiler.target>18</maven.compiler.target>
-    </properties>
+	<properties>
+		<java.version>16</java.version>
+		<maven.compiler.source>16</maven.compiler.source>
+		<maven.compiler.target>16</maven.compiler.target>
+	</properties>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
